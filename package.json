@@ -4,10 +4,9 @@
     "homepage": "https://robinhout.github.io/PvdUS/",
     "private": true,
     "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+        "build": "next build && next export",
+        "deploy": "npm run build && gh-pages -d out",
         "dev": "next dev --turbopack",
-        "build": "next build",
         "start": "next start",
         "lint": "next lint"
     },
