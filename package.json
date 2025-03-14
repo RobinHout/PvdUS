@@ -1,12 +1,10 @@
 {
     "name": "pvdus",
     "version": "0.1.0",
-    "homepage": "https://robinhout.github.io/PvdUS/",
     "private": true,
     "scripts": {
-        "build": "next build && next export",
-        "deploy": "npm run build && gh-pages -d out",
         "dev": "next dev --turbopack",
+        "build": "next build",
         "start": "next start",
         "lint": "next lint"
     },
