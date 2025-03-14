@@ -1,0 +1,25 @@
+.blok {
+    font-family: "Public Sans", sans-serif;
+    height: auto;
+    background-color: white;
+    min-height: 500px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px (rgba(0r, 0, 0, 0.1));
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 40px;
+    color: gray;
+}
+.blok h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.blok p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.groepsfoto {
+    padding-top: 40px;
+    justify-self: center;
+}
