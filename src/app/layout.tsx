@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
+import { Anton, Public_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/header";
-// const geistSans = Geist({
-//     variable: "--font-geist-sans",
-//     subsets: ["latin"],
-// });
 
-// const geistMono = Geist_Mono({
-//     variable: "--font-geist-mono",
-//     subsets: ["latin"],
-// });
+const anton = Anton({
+    weight: "400",
+    subsets: ["latin"],
+});
+const publicSans = Public_Sans({
+    weight: ["400", "700"],
+    subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
     title: "PvdUS",
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
     return (
         <>
-            <html lang="en">
+            <html lang="en" className={`${anton} ${publicSans} antialiased`}>
                 <body className="App">
                     <Header />
                     <main>{children}</main>
