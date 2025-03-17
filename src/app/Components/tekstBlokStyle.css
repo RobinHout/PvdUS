@@ -23,3 +23,6 @@
     padding-top: 40px;
     justify-self: center;
 }
+.blokTekst {
+    white-space: "pre-line";
+}

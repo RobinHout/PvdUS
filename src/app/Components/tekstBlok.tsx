@@ -1,6 +1,7 @@
 import "./tekstBlokStyle.css";
-// import groepsfoto from "../Components/Img/PvdUSgroepsfoto.jpeg";
-// import bedrijven from "../Components/Img/BedrijvenPvdUS.png";
+import Image from "next/image";
+import groepsfoto from "../Components/Img/PvdUSgroepsfoto.jpeg";
+import bedrijven from "../Components/Img/BedrijvenPvdUS.png";
 
 type TekstBlokProps = {
     titel: string;
@@ -12,17 +13,17 @@ const tekstBlok: React.FC<TekstBlokProps> = ({ titel, tekst }) => {
         <>
             <div className="blok">
                 <h1>{titel}</h1>
-                <p style={{ whiteSpace: "pre-line" }}>{tekst}</p>
-                {/* <img
+                <p className="blokTekst">{tekst}</p>
+                <Image
                     src={groepsfoto}
-                    alt="groepsfoto van PvdUS"
-                    className="groepsfoto"
-                ></img>
-                <img
+                    alt="Groepsfoto van PvdUS"
+                    style={{ paddingTop: "20px" }}
+                ></Image>
+                <Image
                     src={bedrijven}
-                    alt="groepsfoto van PvdUS"
-                    className="groepsfoto"
-                ></img> */}
+                    alt="Alle bedrijven waar PvdUS mee te maken heeft"
+                    style={{ justifySelf: "center", paddingTop: "20px" }}
+                ></Image>
             </div>
         </>
     );
