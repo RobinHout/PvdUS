@@ -22,7 +22,11 @@ const tekstBlok: React.FC<TekstBlokProps> = ({ titel, tekst }) => {
                 <Image
                     src={bedrijven}
                     alt="Alle bedrijven waar PvdUS mee te maken heeft"
-                    style={{ justifySelf: "center", paddingTop: "20px" }}
+                    style={{
+                        justifySelf: "center",
+                        paddingTop: "20px",
+                        width: "100%",
+                    }}
                 ></Image>
             </div>
         </>

@@ -40,9 +40,7 @@ const Header = () => {
                         }}
                         aria-label="menuButton"
                     >
-                        <i className="fa fa-bars" id="bars">
-                            =
-                        </i>
+                        <i className="fa fa-bars" id="bars"></i>
                     </a>
                 </div>
                 <nav id="menu" className={menuOpen ? "openMenu" : "menu"}>
