@@ -6,13 +6,15 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     transition: background-color 0.5s ease;
     background-color: transparent;
     z-index: 1000;
 }
 .logo {
-    width: 80px;
+    width: 70px;
     height: auto;
 }
 
@@ -22,7 +24,7 @@
 }
 .knop {
     color: #f280cb;
-    font-size: 300%;
+    font-size: 200%;
 }
 .knop:hover {
     color: whitesmoke;
@@ -60,7 +62,7 @@
     display: block;
 }
 .titel {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "Anton";
     /* font-weight: bold; */
     text-align: center;

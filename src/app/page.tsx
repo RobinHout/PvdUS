@@ -11,7 +11,7 @@ export default function HomePage() {
                 src={achtergrond}
                 className="achtergrondFoto"
             ></img> */}
-            <div style={{ height: "150px" }} className="opvulling" />
+            <div style={{ height: "100px" }} className="opvulling" />
             <TekstBlok
                 titel="Welkom!"
                 tekst="Wij zijn De Partij voor de Utrechtse Student (PvdUS). Op dit moment zetelt onze 18e fractie in de Universiteitsraad van de Universiteit Utrecht. Binnen de Universiteitsraad vertegenwoordigen wij de 'actieve student'. Dit is de student die het belangrijk vindt om zich naast studie ook op andere vlakken te ontplooien. 
