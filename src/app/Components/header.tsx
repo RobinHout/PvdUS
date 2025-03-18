@@ -24,9 +24,9 @@ const Header = () => {
     return (
         <>
             <header id={scrolled ? "scrolled" : ""} className="header">
-                <a className="logo" href="home">
+                <Link className="logo" href="/">
                     <Image src={logo} alt="Logo van PvdUS" priority />
-                </a>
+                </Link>
                 <a href="home">
                     <h1 className="titel">Partij van de Utrechtse Student</h1>
                 </a>
