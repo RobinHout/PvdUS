@@ -9,7 +9,7 @@ export default function contact() {
                 src={achtergrond}
                 className="achtergrondFoto"
             ></img> */}
-            <div style={{ height: "300px" }} className="opvulling" />
+            <div style={{ height: "100px" }} className="opvulling" />
             <TekstBlok
                 titel="Wil je ons bereiken?"
                 tekst="E-mailadres 
