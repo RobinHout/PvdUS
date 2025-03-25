@@ -11,6 +11,7 @@
     color: gray;
 }
 .tekstVanHetBlok {
+    padding-top: 1%;
     justify-self: center;
     max-width: 800px;
     /* background-color: gray; */

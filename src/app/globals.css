@@ -32,3 +32,11 @@ body {
         center top fixed;
     background-size: cover;
 }
+
+.streep {
+    width: 90%;
+    height: 2px;
+    justify-self: center;
+    background-color: #415587;
+    color: transparent;
+}
