@@ -5,11 +5,15 @@
     min-height: 500px;
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px (rgba(0r, 0, 0, 0.1));
-    max-width: 800px;
     margin: 40px auto;
     text-align: center;
     padding: 40px;
     color: gray;
+}
+.tekstVanHetBlok {
+    justify-self: center;
+    max-width: 800px;
+    /* background-color: gray; */
 }
 .blok h1 {
     font-size: 1.8rem;
@@ -19,10 +23,7 @@
     font-size: 0.9rem;
     line-height: 1.6;
 }
-.groepsfoto {
-    padding-top: 40px;
-    justify-self: center;
-}
+
 .blokTekst {
     white-space: pre-line;
 }

@@ -12,12 +12,14 @@ const tekstBlok: React.FC<TekstBlokProps> = ({ titel, tekst }) => {
     return (
         <>
             <div className="blok">
-                <h1>{titel}</h1>
-                <p className="blokTekst">{tekst}</p>
+                <div className="tekstVanHetBlok">
+                    <h1>{titel}</h1>
+                    <p className="blokTekst">{tekst}</p>
+                </div>
                 <Image
                     src={groepsfoto}
                     alt="Groepsfoto van PvdUS"
-                    style={{ paddingTop: "20px" }}
+                    style={{ paddingTop: "20px", justifySelf: "center" }}
                 ></Image>
                 <Image
                     src={bedrijven}
@@ -25,7 +27,7 @@ const tekstBlok: React.FC<TekstBlokProps> = ({ titel, tekst }) => {
                     style={{
                         justifySelf: "center",
                         paddingTop: "20px",
-                        width: "100%",
+                        // width: "100%",
                     }}
                 ></Image>
             </div>

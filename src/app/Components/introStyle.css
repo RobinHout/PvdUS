@@ -1,0 +1,21 @@
+.intro {
+    display: flex;
+    color: #f280cb;
+
+    /* height: 500px; */
+}
+.introTekst h1 {
+    font-size: 2.5rem;
+    font-family: "Anton";
+}
+.introTekst p {
+    font-size: large;
+    font-family: "Public Sans";
+}
+.introLogo {
+    padding: 2%;
+    padding-left: 15%;
+    width: 40%;
+    padding-bottom: 10%;
+    /* height: 100px; */
+}

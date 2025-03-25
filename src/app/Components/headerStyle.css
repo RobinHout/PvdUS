@@ -1,3 +1,6 @@
+.headerNiks {
+    display: none;
+}
 .header {
     display: flex;
     align-items: center;

@@ -2,6 +2,7 @@
 // import groepsfoto from "./Components/Img/PvdUSgroepsfoto.jpeg";
 import "./globals.css";
 import TekstBlok from "./Components/tekstBlok";
+import Intro from "./Components/intro";
 
 export default function HomePage() {
     return (
@@ -12,6 +13,7 @@ export default function HomePage() {
                 className="achtergrondFoto"
             ></img> */}
             <div style={{ height: "100px" }} className="opvulling" />
+            <Intro />
             <TekstBlok
                 titel="Welkom!"
                 tekst={`Wij zijn De Partij voor de Utrechtse Student (PvdUS). Op dit moment zetelt onze 18e fractie in de Universiteitsraad van de Universiteit Utrecht. Binnen de Universiteitsraad vertegenwoordigen wij de 'actieve student'. Dit is de student die het belangrijk vindt om zich naast studie ook op andere vlakken te ontplooien. 

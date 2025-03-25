@@ -10,7 +10,7 @@ const Header = () => {
     const [scrolled, setScrolled] = useState(false);
 
     const handleScroll = () => {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 200) {
             setScrolled(true);
         } else {
             setScrolled(false);
@@ -23,12 +23,15 @@ const Header = () => {
 
     return (
         <>
-            <header id={scrolled ? "scrolled" : ""} className="header">
+            <header
+                id={scrolled ? "scrolled" : ""}
+                className={scrolled ? "header" : "headerNiks"}
+            >
                 <Link className="logo" href="/">
                     <Image src={logo} alt="Logo van PvdUS" priority />
                 </Link>
                 <a href="home">
-                    <h1 className="titel">Partij van de Utrechtse Student</h1>
+                    <h1 className="titel">Partij voor de Utrechtse Student</h1>
                 </a>
                 <div>
                     <a
