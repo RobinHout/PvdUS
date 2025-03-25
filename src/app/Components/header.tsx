@@ -8,9 +8,9 @@ import Link from "next/link";
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-
+    const isHomePage = location.pathname === "/";
     const handleScroll = () => {
-        if (window.scrollY > 200) {
+        if (window.scrollY > 50) {
             setScrolled(true);
         } else {
             setScrolled(false);
@@ -25,7 +25,9 @@ const Header = () => {
         <>
             <header
                 id={scrolled ? "scrolled" : ""}
-                className={scrolled ? "header" : "headerNiks"}
+                className={
+                    scrolled ? "header" : isHomePage ? "headerNiks" : "header"
+                }
             >
                 <Link className="logo" href="/">
                     <Image src={logo} alt="Logo van PvdUS" priority />
@@ -52,7 +54,7 @@ const Header = () => {
                             <Link href="/">Homepagina</Link>
                         </li>
                         <li>
-                            <Link href="#">Fractie 2024-2025</Link>
+                            <Link href="/Fractie">Fractie 2024-2025</Link>
                         </li>
                         <li>
                             <Link href="/Contact">Contact</Link>

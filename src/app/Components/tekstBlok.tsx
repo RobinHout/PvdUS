@@ -11,6 +11,7 @@ type TekstBlokProps = {
 const tekstBlok: React.FC<TekstBlokProps> = ({ titel, tekst }) => {
     return (
         <>
+            <div className="overgang" />
             <div className="blok">
                 <div className="streep">a</div>
                 <div className="tekstVanHetBlok">
