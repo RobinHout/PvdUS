@@ -1,3 +1,3 @@
-// export default function nieuweFractie() {
-//     return <>nieuwe fractie</>;
-// }
+export default function nieuweFractie() {
+    return <>nieuwe fractie</>;
+}

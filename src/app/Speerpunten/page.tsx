@@ -1,3 +1,3 @@
-// export default function Speerpunten() {
-//     return <>Hoi</>;
-// }
+export default function Speerpunten() {
+    return <>Hoi</>;
+}
