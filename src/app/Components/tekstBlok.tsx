@@ -1,7 +1,7 @@
 import "./tekstBlokStyle.css";
-import Image from "next/image";
-import groepsfoto from "../Components/Img/PvdUSgroepsfoto.jpeg";
-import bedrijven from "../Components/Img/BedrijvenPvdUS.png";
+// import Image from "next/image";
+// import groepsfoto from "../Components/Img/PvdUSgroepsfoto.jpeg";
+// import bedrijven from "../Components/Img/BedrijvenPvdUS.png";
 
 type TekstBlokProps = {
     titel: string;
@@ -18,7 +18,7 @@ const tekstBlok: React.FC<TekstBlokProps> = ({ titel, tekst }) => {
                     <h1>{titel}</h1>
                     <p className="blokTekst">{tekst}</p>
                 </div>
-                <Image
+                {/* <Image
                     src={groepsfoto}
                     alt="Groepsfoto van PvdUS"
                     style={{ paddingTop: "20px", justifySelf: "center" }}
@@ -31,8 +31,8 @@ const tekstBlok: React.FC<TekstBlokProps> = ({ titel, tekst }) => {
                         paddingTop: "20px",
                         width: "70%",
                     }}
-                ></Image>
-                <div className="streep">a</div>
+                ></Image> */}
+                {/* <div className="streep">a</div> */}
             </div>
         </>
     );

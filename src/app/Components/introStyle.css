@@ -1,6 +1,9 @@
 .intro {
     display: flex;
     color: #f280cb;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
 
     /* height: 500px; */
 }

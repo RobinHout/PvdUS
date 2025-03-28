@@ -25,7 +25,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .achtergrondFoto {
-    width: 100%;
+    width: 100vh;
 }
 .App {
     background: url("./Components/Img/AchtergrondPvdUSScherp.png") no-repeat
@@ -35,8 +35,35 @@ body {
 
 .streep {
     width: 90%;
+    max-width: 1080px;
     height: 2px;
     justify-self: center;
     background-color: #415587;
     color: transparent;
+}
+.blokjes {
+    /* padding-top: 5%; */
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    max-width: 1080px;
+    margin: auto;
+    /* position: relative; */
+    /* background-color: green; */
+    padding-bottom: 1%;
+}
+.blokje {
+    width: 30%;
+    /* max-width: 324px; */
+    background-color: #f280cb;
+    min-height: 300px;
+    padding: 1%;
+    transition: box-shadow 0.14s ease;
+}
+.blokje:hover {
+    box-shadow: 2px 2px 35px rgba(0, 123, 255, 0.6);
+    opacity: 0.8;
+}
+.blokjeFoto {
+    padding: 1%;
 }
