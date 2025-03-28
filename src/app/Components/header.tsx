@@ -8,7 +8,7 @@ import Link from "next/link";
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const isHomePage = location.pathname === "/";
+    // const isHomePage = location.pathname === "/";
     const handleScroll = () => {
         if (window.scrollY > 50) {
             setScrolled(true);
@@ -26,7 +26,8 @@ const Header = () => {
             <header
                 id={scrolled ? "scrolled" : ""}
                 className={
-                    scrolled ? "header" : isHomePage ? "headerNiks" : "header"
+                    // scrolled ? "header" : isHomePage ? "headerNiks" : "header"
+                    scrolled ? "header" : "headerNiks"
                 }
             >
                 <Link className="logo" href="/">
