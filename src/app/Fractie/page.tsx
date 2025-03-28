@@ -1,3 +1,7 @@
-export default function fractie() {
-    return <>Hello</>;
-}
+// export default function fractie() {
+//     return (
+//         <>
+//             <div>Hello</div>
+//         </>
+//     );
+// }
