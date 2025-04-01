@@ -12,6 +12,7 @@ const Intro = () => {
                     className="introLogo"
                 ></Image>
                 <div className="introTekst">
+                    <p style={{ color: "transparent" }}>.</p>
                     <h1>Partij voor de Utrechtse Student</h1>
                     <p>De partij voor de studenten van Utrecht</p>
                 </div>

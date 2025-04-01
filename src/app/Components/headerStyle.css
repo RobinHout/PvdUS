@@ -1,5 +1,7 @@
-.headerNiks {
-    display: none;
+#headerNiks {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 .header {
     display: flex;

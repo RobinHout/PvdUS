@@ -6,6 +6,7 @@ import Intro from "./Components/intro";
 import Link from "next/link";
 import Image from "next/image";
 import foto from "./Components/Img/PvdUSgroepsfoto.jpeg";
+
 // import Blokje from "./Components/blokjes";
 
 export default function HomePage() {
@@ -25,7 +26,7 @@ export default function HomePage() {
             />
             <div style={{ backgroundColor: "white" }}>
                 <div className="blokjes">
-                    <Link className="blokje" href="#">
+                    <Link className="blokje" href="/NieuweFractie">
                         <Image
                             src={foto}
                             alt="test"
@@ -47,13 +48,23 @@ export default function HomePage() {
                             alt="test"
                             className="blokjeFoto"
                         ></Image>
-                        -
+                        Universiteitsraad
                     </Link>
                 </div>
             </div>
+            <div className="afloop">
+                <Image
+                    src={foto}
+                    alt="Groeps"
+                    style={{ width: "100%" }}
+                ></Image>
+                <div className="overlay"></div>
+                <div className="footer">
+                    <h1>Partij voor de Utrechtse Student</h1>
+                </div>
+            </div>
             {/* <Blokje></Blokje> */}
-
-            <div style={{ height: "500px" }} className="opvulling" />
+            {/* <div style={{ height: "500px"`11 }} className="opvulling" /> */}
         </>
     );
 }
