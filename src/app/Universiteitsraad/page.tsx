@@ -5,7 +5,7 @@ export default function Speerpunten() {
         <>
             <TekstBlok
                 titel="Universiteitsraad"
-                tekst="Wat is de Universiteitsraad?
+                tekst={`Wat is de Universiteitsraad?
 
 De Universiteitsraad (U-raad, UR) is de centrale medezeggenschapsraad van de Universiteit Utrecht. De U-raad vertegenwoordigt de belangen van alle studenten en medewerkers en bestaat uit twaalf personeelsleden (ieder voor acht uur per week) en twaalf studentleden (ieder voor 32 uur per week). Als studentleden vertegenwoordigen wij de belangen van alle 40.000 studenten aan de UU op het hoogste niveau. De U-raad vergadert met het College van Bestuur (CvB) over hun beleidsplannen en oefent op deze manier invloed uit. 
 
@@ -50,7 +50,7 @@ De Universiteitsraad heeft tevens initiatiefrecht. Dit betekent dat je als U-raa
 
 Als U-raadslid houdt je je dus zowel bezig met het kritisch beoordelen en controleren van de beleidsplannen van het CvB, als met je eigen initiatieven om de UU te verbeteren. Klik HIER voor een aantal van onze initiatieven uit de afgelopen jaren. 
 
-Ten slotte heeft de Uraad het recht om ongevraagd advies te geven en hebben we te allen tijde informatierecht; het recht om alle informatie te krijgen. "
+Ten slotte heeft de Uraad het recht om ongevraagd advies te geven en hebben we te allen tijde informatierecht; het recht om alle informatie te krijgen. `}
             ></TekstBlok>
             <div className="punt">
                 <div className="streep">a</div>

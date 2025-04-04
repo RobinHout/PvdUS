@@ -33,6 +33,7 @@ export default function HomePage() {
                             className="blokjeFoto"
                         ></Image>
                         <div className="blokjeTekst">Nieuwe fractie</div>
+                        
                     </Link>
                     <Link className="blokje" href="#">
                         <Image
@@ -41,6 +42,7 @@ export default function HomePage() {
                             className="blokjeFoto"
                         ></Image>
                         <div className="blokjeTekst">Speerpunten</div>
+                        
                     </Link>
                     <Link className="blokje" href="#">
                         <Image
