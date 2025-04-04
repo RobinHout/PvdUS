@@ -55,23 +55,25 @@ body {
     background-color: #f280cb;
     /* min-height: 300px; */
     /* padding: 5px; */
-    border: 2px solid #f280cb;
-    border-radius: 25;
+    border: 3px solid #f280cb;
+    border-radius: 5 5 10 10;
     transition: box-shadow 0.14s ease;
 }
 .blokje:hover {
-    box-shadow: 2px 2px 35px rgba(0, 123, 255, 0.6);
-    opacity: 0.8;
+    box-shadow: 2px 2px 10px rgba(96, 173, 255, 0.6);
+    opacity: 0.9;
 }
 .blokjeFoto {
     width: 100%;
-    border-radius: 25px 25px 5px 5px;
+    border-radius: 5 5 5 5;
 }
 .blokjeTekst {
     justify-self: center;
     font-size: large;
     font-family: "Public Sans";
-    color: gra;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    /* color: gray; */
 }
 .afloop {
     position: relative;

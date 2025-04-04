@@ -9,7 +9,7 @@
 
     /* min-height: 500px; */
     /* margin: 40px auto; */
-    text-align: center;
+    text-align: left;
     padding: 40px;
     color: gray;
 }
@@ -31,10 +31,12 @@
 .blok h1 {
     font-size: 1.8rem;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 .blok p {
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
 }
 
 .blokTekst {

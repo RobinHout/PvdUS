@@ -13,7 +13,7 @@ const Header = () => {
 
     const pathname = usePathname();
     const isHomePage = pathname === "/";
-    console.log(isHomePage);
+    console.log(hideHeader);
 
     // const handleScroll = () => {
     //     if (window.scrollY > 50 && window.scrollY < 2000) {
@@ -41,10 +41,13 @@ const Header = () => {
             }
 
             // Hide header at the bottom
-            if (windowBottom >= pageHeight) {
-                setHideHeader(true);
-            } else {
-                setHideHeader(false);
+            if (isHomePage) {
+                if (windowBottom >= pageHeight) {
+                    setHideHeader(true);
+                    console.log(windowBottom + "sdf" + pageHeight);
+                } else {
+                    setHideHeader(false);
+                }
             }
         };
         window.addEventListener("scroll", handleScroll);
@@ -83,16 +86,23 @@ const Header = () => {
                             <Link href="/">Homepagina</Link>
                         </li>
                         <li>
+                            <Link href="/NieuweFractie">Fractie 2025-2026</Link>
+                        </li>
+                        <li>
                             <Link href="/Fractie">Fractie 2024-2025</Link>
                         </li>
                         <li>
                             <Link href="/Contact">Contact</Link>
                         </li>
                         <li>
-                            <Link href="#">Speerpunten & initiatieven</Link>
+                            <Link href="/Speerpunten">
+                                Speerpunten & initiatieven
+                            </Link>
                         </li>
                         <li>
-                            <Link href="#">Universiteitsraad</Link>
+                            <Link href="/Universiteitsraad">
+                                Universiteitsraad
+                            </Link>
                         </li>
                         <li>
                             <Link href="#">Word lid!</Link>

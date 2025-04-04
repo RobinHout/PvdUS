@@ -1,63 +1,62 @@
 import TekstBlok from "../Components/tekstBlok";
 import "./nieuweFractieStyle.css";
-import bestuurslid from "../Components/Img/Bestuurslid 1.jpeg";
+import sammie from "../Components/Img/Bestuurslid 2.jpeg";
+import kai from "../Components/Img/Bestuurslid 3.jpeg";
+import orlando from "../Components/Img/Bestuurslid 1.jpg";
+import anne from "../Components/Img/Bestuurslid 5.jpg";
+import pien from "../Components/Img/Bestuurslid 4.jpeg";
 import Image from "next/image";
+import Footer from "../Components/footer";
 export default function nieuweFractie() {
     return (
-        <>
+        <div style={{}}>
             <TekstBlok titel="Nieuwe Fractie" tekst=""></TekstBlok>
             <div className="nieuweFractieAchtergrond">
                 <div className="nieuwLid">
-                    <Image
-                        src={bestuurslid}
-                        alt="iets"
-                        className="nlIMG"
-                    ></Image>
-                    <div className="overlay">
-                        <div className="text">Bestuurslid 1</div>
+                    <Image src={sammie} alt="iets" className="nlIMG"></Image>
+                    <div className="NFoverlay">
+                        <div className="NFtext">Bestuurslid 3</div>
+                    </div>
+                    <div className="NFinfo">
+                        Sammie Verhoeven <br /> Fractievoorzitter
                     </div>
                 </div>
                 <div className="nieuwLid">
-                    <Image
-                        src={bestuurslid}
-                        alt="iets"
-                        className="nlIMG"
-                    ></Image>
-                    <div className="overlay">
-                        <div className="text">Bestuurslid 2</div>
+                    <Image src={kai} alt="iets" className="nlIMG"></Image>
+                    <div className="NFoverlay">
+                        <div className="NFtext">Bestuurslid 3</div>
+                    </div>
+                    <div className="NFinfo">
+                        Kai van Willigen <br /> Voorzitter Universiteitsraad
                     </div>
                 </div>
                 <div className="nieuwLid">
-                    <Image
-                        src={bestuurslid}
-                        alt="iets"
-                        className="nlIMG"
-                    ></Image>
-                    <div className="overlay">
-                        <div className="text">Bestuurslid 3</div>
+                    <Image src={orlando} alt="iets" className="nlIMG"></Image>
+                    <div className="NFoverlay">
+                        <div className="NFtext">Bestuurslid 3</div>
+                    </div>
+                    <div className="NFinfo">Orlando Weering</div>
+                </div>
+                <div className="nieuwLid">
+                    <Image src={anne} alt="iets" className="nlIMG"></Image>
+                    <div className="NFoverlay">
+                        <div className="NFtext">Bestuurslid 3</div>
+                    </div>
+                    <div className="NFinfo">
+                        Anne Minjon <br /> PR-Commissaris Universiteitsraad
                     </div>
                 </div>
                 <div className="nieuwLid">
-                    <Image
-                        src={bestuurslid}
-                        alt="iets"
-                        className="nlIMG"
-                    ></Image>
-                    <div className="overlay">
-                        <div className="text">Bestuurslid 4</div>
+                    <Image src={pien} alt="iets" className="nlIMG"></Image>
+                    <div className="NFoverlay">
+                        <div className="NFtext">Bestuurslid 3</div>
                     </div>
-                </div>
-                <div className="nieuwLid">
-                    <Image
-                        src={bestuurslid}
-                        alt="iets"
-                        className="nlIMG"
-                    ></Image>
-                    <div className="overlay">
-                        <div className="text">Bestuurslid 5</div>
+                    <div className="NFinfo">
+                        Pien van der Meij <br /> Secretaris Universiteitsraad
                     </div>
                 </div>
             </div>
-        </>
+            <Footer></Footer>
+        </div>
     );
 }
