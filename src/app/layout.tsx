@@ -34,7 +34,6 @@ export default function RootLayout({
             <body className="App">
                 <Header />
                 <main>{children}</main>
-                
             </body>
         </>
     );

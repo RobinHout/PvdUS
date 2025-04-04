@@ -2,11 +2,13 @@
     position: relative;
     display: flex;
     /* max-height: 250px; */
+    justify-self: center;
     /* border: 1px solid #000; */
     background-color: gray;
     border-radius: 20px;
     margin: 2%;
-    /* max-width: fit-content; */
+    width: 1080px;
+    max-width: 1080px;
 }
 .nieuwLid .nlIMG {
     border-radius: 20px;
@@ -36,15 +38,15 @@
     display: block;
     align-self: center;
     justify-content: center;
-    background-color: white;
+    /* background-color: white; */
     /* margin: 0px 5% 0px 5%; */
     /* margin: 0px 5% 0px 5%; */
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3%;
+    margin-bottom: 3%; */
 
     height: auto;
-    max-width: 1080px;
+    /* max-width: 1080px; */
 }
 .nieuwLid:hover .NFoverlay {
     border-radius: 20px;

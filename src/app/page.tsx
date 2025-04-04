@@ -33,18 +33,16 @@ export default function HomePage() {
                             className="blokjeFoto"
                         ></Image>
                         <div className="blokjeTekst">Nieuwe fractie</div>
-                        
                     </Link>
-                    <Link className="blokje" href="#">
+                    <Link className="blokje" href="/Speerpunten">
                         <Image
                             src={foto}
                             alt="test"
                             className="blokjeFoto"
                         ></Image>
                         <div className="blokjeTekst">Speerpunten</div>
-                        
                     </Link>
-                    <Link className="blokje" href="#">
+                    <Link className="blokje" href="/Universiteitsraad">
                         <Image
                             src={foto}
                             alt="test"
