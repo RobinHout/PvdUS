@@ -1,6 +1,8 @@
 // import achtergrond from "../Components/Img/UtrechtDomtoren.jpg";
 import TekstBlok from "../Components/tekstBlok";
-
+import Image from "next/image";
+import foto from "../Components/Img/PvdUSgroepsfoto.jpeg";
+import Footer from "../Components/footer";
 export default function contact() {
     return (
         <>
@@ -12,19 +14,24 @@ export default function contact() {
             <div style={{ height: "100px" }} className="opvulling" />
             <TekstBlok
                 titel="Wil je ons bereiken?"
-                tekst="E-mailadres 
-
+                tekst={`E-mailadres 
 bestuur.pvdus@gmail.com
 
 Adres
-
 Bestuursgebouw, kamer 4.46
-
 Heidelberglaan 8, 3584CS Utrecht
 
-mailbox 80125, 3508 TC Utrecht"
+mailbox 80125, 3508 TC Utrecht`}
             />
-            <h1 style={{ height: "100px" }}>a!</h1>
+            <div className="afloop">
+                <Image
+                    src={foto}
+                    alt="Groeps"
+                    style={{ width: "100%" }}
+                ></Image>
+                <div className="overlay"></div>
+                <Footer></Footer>
+            </div>
         </>
     );
 }

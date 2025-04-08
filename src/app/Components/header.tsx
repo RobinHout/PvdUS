@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import "./headerStyle.css";
 import logo from "./Img/logo-pvdus.png";
 import Image from "next/image";
@@ -9,11 +9,10 @@ import Link from "next/link";
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const [hideHeader, setHideHeader] = useState(false);
+    // const [hideHeader, setHideHeader] = useState(false);
 
-    const pathname = usePathname();
-    const isHomePage = pathname === "/";
-    console.log(hideHeader);
+    // const pathname = usePathname();
+    // const isHomePage = pathname === "/";
 
     // const handleScroll = () => {
     //     if (window.scrollY > 50 && window.scrollY < 2000) {
@@ -30,8 +29,8 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            const windowBottom = window.innerHeight + scrollY;
-            const pageHeight = document.body.offsetHeight;
+            // const windowBottom = window.innerHeight + scrollY;
+            // const pageHeight = document.body.offsetHeight;
 
             // Set scrolled flag
             if (scrollY > 50) {
@@ -41,24 +40,25 @@ const Header = () => {
             }
 
             // Hide header at the bottom
-            if (isHomePage) {
-                if (windowBottom >= pageHeight) {
-                    setHideHeader(true);
-                    console.log(windowBottom + "sdf" + pageHeight);
-                } else {
-                    setHideHeader(false);
-                }
-            }
+            // if (isHomePage) {
+            //     if (windowBottom >= pageHeight) {
+            //         setHideHeader(true);
+            //         console.log(windowBottom + "sdf" + pageHeight);
+            //     } else {
+            //         setHideHeader(false);
+            //     }
+            // }
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    if (hideHeader) return null;
+    // if (hideHeader) return null;
     return (
         <>
             <header
-                id={scrolled ? "scrolled" : isHomePage ? "headerNiks" : ""}
+                // id={scrolled ? "scrolled" : isHomePage ? "headerNiks" : ""}
+                id={scrolled ? "scrolled" : ""}
                 className="header"
             >
                 <Link className="logo" href="/">

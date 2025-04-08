@@ -17,7 +17,7 @@ export default function HomePage() {
                 src={achtergrond}
                 className="achtergrondFoto"
             ></img> */}
-            <div style={{ height: "100px" }} className="opvulling" />
+            <div style={{ height: "200px" }} className="opvulling" />
             <Intro />
             <TekstBlok
                 titel="Welkom!"
