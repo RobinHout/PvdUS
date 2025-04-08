@@ -3,7 +3,7 @@
     display: flex;
     /* max-height: 250px; */
     /* border: 1px solid #000; */
-    background-color: gray;
+    background-color: white;
     border-radius: 20px;
     margin: 2%;
     width: 1080px;
@@ -49,10 +49,10 @@
 }
 .nieuwLid:hover .NFoverlay {
     border-radius: 20px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 .NFtext {
-    color: white;
+    color: rgb(203, 255, 241);
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -62,8 +62,12 @@
 }
 .NFinfo {
     padding: 05px 15px 5px 15px;
+    /* background-color: green; */
+    /* align-self: center; */
+    /* padding-left: auto; */
+    /* width: 100%; */
     white-space: pre-line;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: "Anton";
     /* font-weight: bold; */
     /* text-align: center; */
