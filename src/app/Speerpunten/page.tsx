@@ -4,13 +4,44 @@ export default function Speerpunten() {
     return (
         <>
             <TekstBlok
-                titel="Verenigingsleven"
-                tekst={`Utrecht staat bekend om de veelzijdigheid aan sport-, studie- en gezelligheidsverenigingen in de stad. Naast het volgen van de studie zelf vormen deze studentenorganisaties voor vele studenten een belangrijk onderdeel van hun studententijd. Ze vormen een deel van het karakter van Utrecht als stad en zijn niet los te zien van de universiteit. De universiteit moet deze organisaties ondersteunen en de erkenning en waardering bieden die ze verdienen.  
-
-De PvdUS maakt zich sinds haar oprichting hard voor de belangen van studentenorganisaties en pleit voor een goede band tussen deze organisaties en de universiteit. Voldoende financiële steun is hierbij een belangrijk speerpunt. We denken dat er meer te halen valt uit de band tussen de verschillende verenigingen en de universiteit, omdat beiden elkaar veel te bieden hebben. Problemen waar de universiteit mee worstelt met haar studenten, bijvoorbeeld op het gebied van studentenwelzijn en prestatiedruk, kunnen bijvoorbeeld in verenigingsverband aangekaart worden. Verenigingen staan namelijk dicht op veel studenten van de universiteit en hebben daarmee een grote impact op studenten. 
-
- Andersom heeft de UU veel kennis en expertise in huis op tal van vlakken waar verenigingen van kunnen leren in het voeren van hun organisatie. Nauwer contact zou daarom voor beide voordelig zijn. Tegelijkertijd staat de PvdUS ook voor de zelfstandigheid van verenigingen, die met hun lange geschiedenis elk een eigen karakter hebben. Verenigingen moeten dan ook geen directe spreekbuis worden van de universiteit.  `}
+                titel="Standpunten"
+                tekst={`Al meer dan 18 jaar vertegenwoordigt de PvdUS de belangen van actieve studenten in Utrecht.
+Want studeren is zoveel meer dan alleen in de boeken duiken. Je studententijd is een unieke periode waarin je niet alleen academische kennis opdoet, maar ook jezelf leert kennen, nieuwe ervaringen opdoet en jezelf ontwikkelt – binnen én buiten de collegezaal. Of je nu actief bent bij een vereniging, je inzet voor medezeggenschap of op zoek bent naar balans tussen studie en relevante ervaring opdoen: de stem van de actieve student verdient een plek aan tafel. En dáár maakt de PvdUS zich hard voor.`}
             ></TekstBlok>
+            <div className="punt">
+                <div className="streep">a</div>
+                <div className="puntTitel">Verenigingsleven</div>
+                <div className="puntTekst">
+                    Utrecht staat bekend om de veelzijdigheid aan sport-,
+                    studie- en gezelligheidsverenigingen in de stad. Naast het
+                    volgen van de studie zelf vormen deze studentenorganisaties
+                    voor vele studenten een belangrijk onderdeel van hun
+                    studententijd. Ze vormen een deel van het karakter van
+                    Utrecht als stad en zijn niet los te zien van de
+                    universiteit. De universiteit moet deze organisaties
+                    ondersteunen en de erkenning en waardering bieden die ze
+                    verdienen. De PvdUS maakt zich sinds haar oprichting hard
+                    voor de belangen van studentenorganisaties en pleit voor een
+                    goede band tussen deze organisaties en de universiteit.
+                    Voldoende financiële steun is hierbij een belangrijk
+                    speerpunt. We denken dat er meer te halen valt uit de band
+                    tussen de verschillende verenigingen en de universiteit,
+                    omdat beiden elkaar veel te bieden hebben. Problemen waar de
+                    universiteit mee worstelt met haar studenten, bijvoorbeeld
+                    op het gebied van studentenwelzijn en prestatiedruk, kunnen
+                    bijvoorbeeld in verenigingsverband aangekaart worden.
+                    Verenigingen staan namelijk dicht op veel studenten van de
+                    universiteit en hebben daarmee een grote impact op
+                    studenten. Andersom heeft de UU veel kennis en expertise in
+                    huis op tal van vlakken waar verenigingen van kunnen leren
+                    in het voeren van hun organisatie. Nauwer contact zou daarom
+                    voor beide voordelig zijn. Tegelijkertijd staat de PvdUS ook
+                    voor de zelfstandigheid van verenigingen, die met hun lange
+                    geschiedenis elk een eigen karakter hebben. Verenigingen
+                    moeten dan ook geen directe spreekbuis worden van de
+                    universiteit.
+                </div>
+            </div>
             <div className="punt">
                 <div className="streep">a</div>
                 <div className="puntTitel">Studentenwelzijn</div>

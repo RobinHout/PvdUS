@@ -92,7 +92,7 @@ const Header = () => {
                             <Link href="/Fractie">Fractie 2024-2025</Link>
                         </li>
                         <li>
-                            <Link href="/Contact">Contact</Link>
+                            <Link href="/OudeFracties">Oude fracties</Link>
                         </li>
                         <li>
                             <Link href="/Speerpunten">
@@ -105,10 +105,10 @@ const Header = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="#">Word lid!</Link>
+                            <Link href="/Contact">Contact</Link>
                         </li>
                         <li>
-                            <Link href="/OudeFracties">Oude fracties</Link>
+                            <Link href="#">Word lid!</Link>
                         </li>
                     </ul>
                 </nav>
