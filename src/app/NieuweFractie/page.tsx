@@ -13,9 +13,15 @@ export default function nieuweFractie() {
             <TekstBlok titel="Nieuwe Fractie" tekst=""></TekstBlok>
             <div className="fractieLijst">
                 <div className="fractieLid">
-                    <Image src={lot} alt="iets" className="nlIMG"></Image>
-                    <div className="NFoverlay">
-                        <div className="NFtext">
+                    <div className="fractieFotoContainer">
+                        <Image
+                            src={lot}
+                            alt="iets"
+                            className="fractieFoto"
+                        ></Image>
+                    </div>
+                    <div className="fractieTekst">
+                        <div className="fractieLangeTekst">
                             Lot is 21 jaar oud en studeert Philosophy, Politics
                             & Economics, volgend jaar gaat ze beginnen aan haar
                             master Economic Policy. Naast haar studie is ze
@@ -31,13 +37,19 @@ export default function nieuweFractie() {
                             gedeeld worden en studenten daar direct van
                             profiteren.{" "}
                         </div>
+                        <div className="fractieNaam">Lot Peters</div>
                     </div>
-                    <div className="NFinfo">Lot Peters</div>
                 </div>
                 <div className="fractieLid">
-                    <Image src={veerle} alt="iets" className="nlIMG"></Image>
-                    <div className="NFoverlay">
-                        <div className="NFtext">
+                    <div className="fractieFotoContainer">
+                        <Image
+                            src={veerle}
+                            alt="iets"
+                            className="fractieFoto"
+                        ></Image>
+                    </div>
+                    <div className="fractieTekst">
+                        <div className="fractieLangeTekst">
                             De tweede plek op onze lijst wordt vervuld door
                             Veerle Oude Lenferink. Ze is 21 jaar oud en zit in
                             haar derde jaar van de track Internationale
@@ -56,13 +68,19 @@ export default function nieuweFractie() {
                             soorten sport omdat dit bevorderlijk is voor het
                             studentenwelzijn.
                         </div>
+                        <div className="fractieNaam">Veerle Oude Lenferink</div>
                     </div>
-                    <div className="NFinfo">Veerle Oude Lenferink</div>
                 </div>
                 <div className="fractieLid">
-                    <Image src={kim} alt="iets" className="nlIMG"></Image>
-                    <div className="NFoverlay">
-                        <div className="NFtext">
+                    <div className="fractieFotoContainer">
+                        <Image
+                            src={kim}
+                            alt="iets"
+                            className="fractieFoto"
+                        ></Image>
+                    </div>
+                    <div className="fractieTekst">
+                        <div className="fractieLangeTekst">
                             Kim is 21 jaar en studeert Sociologie en Economics
                             and Business Economics. Daarnaast is ze 3e jaars bij
                             C.S. Veritas. Ze wil zich komend jaar inzetten voor
@@ -77,13 +95,19 @@ export default function nieuweFractie() {
                             beschikbaar blijft voor studenten om een fijne
                             studententijd te kunnen hebben.
                         </div>
+                        <div className="fractieNaam">Kim Brandsen</div>
                     </div>
-                    <div className="NFinfo">Kim Brandsen</div>
                 </div>
                 <div className="fractieLid">
-                    <Image src={gijs} alt="iets" className="nlIMG"></Image>
-                    <div className="NFoverlay">
-                        <div className="NFtext">
+                    <div className="fractieFotoContainer">
+                        <Image
+                            src={gijs}
+                            alt="iets"
+                            className="fractieFoto"
+                        ></Image>
+                    </div>
+                    <div className="fractieTekst">
+                        <div className="fractieLangeTekst">
                             Gijs is 24 jaar oud en zit in zijn derde jaar van de
                             opleiding Interdisciplinaire Sociale Wetenschappen.
                             Daarnaast is hij lid bij het Utrechtsch Studenten
@@ -99,15 +123,21 @@ export default function nieuweFractie() {
                             spelen in studentenhuisvesting, zodat studenten zich
                             kunnen focussen op hun ontwikkeling!
                         </div>
+                        <div className="fractieNaam">Gijs Frankena</div>
                     </div>
-                    <div className="NFinfo">Gijs Frankena</div>
                 </div>
                 <div className="fractieLid">
-                    <Image src={christa} alt="iets" className="nlIMG"></Image>
-                    <div className="NFoverlay">
-                        <div className="NFtext">Nog niks</div>
+                    <div className="fractieFotoContainer">
+                        <Image
+                            src={christa}
+                            alt="iets"
+                            className="fractieFoto"
+                        ></Image>
                     </div>
-                    <div className="NFinfo">Christa Hoedmaeker</div>
+                    <div className="fractieTekst">
+                        <div className="fractieLangeTekst">Nog niks</div>
+                        <div className="fractieNaam">Christa Hoedmaeker</div>
+                    </div>
                 </div>
             </div>
             <Footer></Footer>

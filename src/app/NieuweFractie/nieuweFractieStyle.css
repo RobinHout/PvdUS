@@ -1,75 +1,78 @@
-.fractieLid {
-    position: relative;
-    display: flex;
-    /* max-height: 250px; */
-    /* border: 1px solid #000; */
-    background-color: white;
-    border-radius: 20px;
-    margin: 2%;
-    width: 1080px;
-    max-width: 1080px;
-    /* max-width: fit-content; */
-}
-.fractieLid .nlIMG {
-    border-radius: 20px;
-    vertical-align: top;
-
-    max-width: 200px;
-    height: auto;
-    /* max-height: 300px; */
-}
-.NFoverlay {
-    position: absolute;
-    border-radius: 20px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    /* height: 250px; */
-    width: 100%;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: #aec6cf;
-}
 .fractieLijst {
     display: flex;
-    flex-wrap: wrap;
-    /* display: block; */
-    /* align-self: center; */
+    gap: 20px;
     justify-content: center;
-    /* background-color: white; */
-    /* margin: 0px 5% 0px 5%; */
-    /* margin: 0px 5% 0px 5%; */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
 
-    margin-bottom: 3%;
+.fractieLid {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 250px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+    position: relative;
+}
 
-    height: auto;
-    /* max-width: 1080px; */
+.fractieLid:hover {
+    transform: scale(1.6);
+    z-index: 10; /* Zorgt dat het boven de rest komt */
 }
-.fractieLid:hover .NFoverlay {
-    border-radius: 20px;
-    opacity: 1;
+
+.fractieFotoContainer {
+    /* flex: 0 0 100px; */
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    transition: flex-basis 0.4s ease;
 }
-.NFtext {
-    color: #fadadd;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+
+.fractieLid:hover .fractieFoto {
+    flex-basis: 130px;
 }
-.NFinfo {
-    padding: 05px 15px 5px 15px;
-    /* background-color: green; */
-    /* align-self: center; */
-    /* padding-left: auto; */
-    /* width: 100%; */
-    white-space: pre-line;
-    font-size: 2rem;
-    font-family: "Anton";
-    /* font-weight: bold; */
-    /* text-align: center; */
-    /* color: #f280cb; */
+
+.fractieFoto {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    transition: transform 0.4s ease;
+}
+
+.fractieLid:hover .bioImg {
+    transform: scale(1.2) translateX(-10%);
+}
+
+.fractieTekst {
+    flex: 1;
+    padding: 10px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fractieNaam {
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: opacity 0.3s ease;
+}
+
+.fractieLangeTekst {
+    font-size: 0.7rem;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.fractieLid:hover .fractieNaam {
+    display: none;
+}
+
+.fractieLid:hover .fractieLangeTekst {
+    display: block;
 }

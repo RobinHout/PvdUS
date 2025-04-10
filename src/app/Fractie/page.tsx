@@ -13,18 +13,39 @@ export default function nieuweFractie() {
             <TekstBlok titel="Fractie 2024-2025" tekst=""></TekstBlok>
             <div className="fractieLijst">
                 <div className="fractieLid">
-                    <Image src={sammie} alt="iets" className="nlIMG"></Image>
-                    <div className="NFoverlay">
-                        <div className="NFtext">{`Hoi, ik ben Sammie Verhoeven. Ik ben dit jaar de fractievoorzitter van PvdUS. Ik studeer Liberal Arts and Sciences met mijn hoofdrichting in Bestuurs- en Organsatiewetenschap en daarnaast ben ik lid van de studentenvereniging U.V.S.V./N.V.V.S.U.. Verder ben ik dit jaar coördinator van de commissie Strategie, Personeel & Organisatie binnen de Universiteitsraad en zet ik me dit jaar in voor sociale veiligheid.`}</div>
+                    <div className="fractieFotoContainer">
+                        <Image
+                            src={sammie}
+                            alt="iets"
+                            className="fractieFoto"
+                        ></Image>
                     </div>
-                    <div className="NFinfo">
-                        Sammie Verhoeven <br /> Fractievoorzitter
+                    <div className="fractieTekst">
+                        <div className="fractieLangeTekst">
+                            Hoi, ik ben Sammie Verhoeven. Ik ben dit jaar de
+                            fractievoorzitter van PvdUS. Ik studeer Liberal Arts
+                            and Sciences met mijn hoofdrichting in Bestuurs- en
+                            Organsatiewetenschap en daarnaast ben ik lid van de
+                            studentenvereniging U.V.S.V./N.V.V.S.U.. Verder ben
+                            ik dit jaar coördinator van de commissie Strategie,
+                            Personeel & Organisatie binnen de Universiteitsraad
+                            en zet ik me dit jaar in voor sociale veiligheid.
+                        </div>
+                        <div className="fractieNaam">
+                            Sammie Verhoeven <br /> Fractievoorzitter
+                        </div>
                     </div>
                 </div>
                 <div className="fractieLid">
-                    <Image src={kai} alt="iets" className="nlIMG"></Image>
-                    <div className="NFoverlay">
-                        <div className="NFtext">
+                    <div className="fractieFotoContainer">
+                        <Image
+                            src={kai}
+                            alt="iets"
+                            className="fractieFoto"
+                        ></Image>
+                    </div>
+                    <div className="fractieTekst">
+                        <div className="fractieLangeTekst">
                             Hallo, Ik ben Kai van Willigen en ik ben dit jaar de
                             voorzitter van de Universiteitsraad. Binnen de raad
                             zit ik in de commissie Onderwijs, Onderzoek en
@@ -33,27 +54,39 @@ export default function nieuweFractie() {
                             binnen Utrecht. Naast het raadswerk studeer ik
                             Psychologie en ben ik lid bij Unitas!{" "}
                         </div>
-                    </div>
-                    <div className="NFinfo">
-                        Kai van Willigen <br /> Voorzitter Universiteitsraad
+                        <div className="fractieNaam">
+                            Kai van Willigen <br /> Voorzitter Universiteitsraad
+                        </div>
                     </div>
                 </div>
                 <div className="fractieLid">
-                    <Image src={orlando} alt="iets" className="nlIMG"></Image>
-                    <div className="NFoverlay">
-                        <div className="NFtext">
+                    <div className="fractieFotoContainer">
+                        <Image
+                            src={orlando}
+                            alt="iets"
+                            className="fractieFoto"
+                        ></Image>
+                    </div>
+                    <div className="fractieTekst">
+                        <div className="fractieLangeTekst">
                             Hallo, mijn naam is Orlando Weering. Ik studeer
                             Filosofie en ik ben lid van het Utrechts Studenten
                             Corps. In de raad zit ik bij de commissie Financiën,
                             Ict, Huisvesting & Duurzaamheid.
                         </div>
+                        <div className="fractieNaam">Orlando Weering</div>
                     </div>
-                    <div className="NFinfo">Orlando Weering</div>
                 </div>
                 <div className="fractieLid">
-                    <Image src={anne} alt="iets" className="nlIMG"></Image>
-                    <div className="NFoverlay">
-                        <div className="NFtext">
+                    <div className="fractieFotoContainer">
+                        <Image
+                            src={anne}
+                            alt="iets"
+                            className="fractieFoto"
+                        ></Image>
+                    </div>
+                    <div className="fractieTekst">
+                        <div className="fractieLangeTekst">
                             Hoi! Ik ben Anne Minjon. Ik studeer Communicatie- en
                             Informatiewetenschappen en daarnaast ben ik lid van
                             de studentenvereniging U.V.S.V./N.V.V.S.U.. Dit jaar
@@ -62,15 +95,21 @@ export default function nieuweFractie() {
                             de commissie Financiën, Ict, Huisvesting &
                             Duurzaamheid.{" "}
                         </div>
-                    </div>
-                    <div className="NFinfo">
-                        Anne Minjon <br /> PR-Commissaris Universiteitsraad
+                        <div className="fractieNaam">
+                            Anne Minjon <br /> PR-Commissaris Universiteitsraad
+                        </div>
                     </div>
                 </div>
                 <div className="fractieLid">
-                    <Image src={pien} alt="iets" className="nlIMG"></Image>
-                    <div className="NFoverlay">
-                        <div className="NFtext">
+                    <div className="fractieFotoContainer">
+                        <Image
+                            src={pien}
+                            alt="iets"
+                            className="fractieFoto"
+                        ></Image>
+                    </div>
+                    <div className="fractieTekst">
+                        <div className="fractieLangeTekst">
                             Hi, ik ben Pien van der Meij. Ik studeer Rechten en
                             ben ik lid bij Unitas S.R. Ik heb dit jaar een
                             plekje in de commissie Onderwijs, Onderzoek &
@@ -79,9 +118,10 @@ export default function nieuweFractie() {
                             betekent dat ik ga over het mailverkeer en notuleer
                             bij vergaderingen.
                         </div>
-                    </div>
-                    <div className="NFinfo">
-                        Pien van der Meij <br /> Secretaris Universiteitsraad
+                        <div className="fractieNaam">
+                            Pien van der Meij <br /> Secretaris
+                            Universiteitsraad
+                        </div>
                     </div>
                 </div>
             </div>
