@@ -17,6 +17,7 @@
     overflow: hidden;
     transition: transform 0.4s ease;
     position: relative;
+    border: 2px solid black;
 }
 
 .fractieLid:hover {
