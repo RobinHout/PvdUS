@@ -1,18 +1,18 @@
 import TekstBlok from "../Components/tekstBlok";
-import "./fractieStyle.css";
-import sammie from "../Components/Img/Bestuurslid 2.jpeg";
-import kai from "../Components/Img/Bestuurslid 3.jpeg";
-import orlando from "../Components/Img/Bestuurslid 1.jpg";
-import anne from "../Components/Img/Bestuurslid 5.jpg";
-import pien from "../Components/Img/Bestuurslid 4.jpeg";
+import "../NieuweFractie/nieuweFractieStyle.css";
+import sammie from "../Components/Img/Fractie 2024-2025/SammieVerhoeven.jpeg";
+import kai from "../Components/Img/Fractie 2024-2025/KaiVanWilligen.jpeg";
+import orlando from "../Components/Img/Fractie 2024-2025/OrlandoWeering.jpg";
+import anne from "../Components/Img/Fractie 2024-2025/AnneMinjon.jpg";
+import pien from "../Components/Img/Fractie 2024-2025/PienVanDerMeij.jpeg";
 import Image from "next/image";
 import Footer from "../Components/footer";
 export default function nieuweFractie() {
     return (
         <div style={{}}>
             <TekstBlok titel="Fractie 2024-2025" tekst=""></TekstBlok>
-            <div className="nieuweFractieAchtergrond">
-                <div className="nieuwLid">
+            <div className="fractieLijst">
+                <div className="fractieLid">
                     <Image src={sammie} alt="iets" className="nlIMG"></Image>
                     <div className="NFoverlay">
                         <div className="NFtext">{`Hoi, ik ben Sammie Verhoeven. Ik ben dit jaar de fractievoorzitter van PvdUS. Ik studeer Liberal Arts and Sciences met mijn hoofdrichting in Bestuurs- en Organsatiewetenschap en daarnaast ben ik lid van de studentenvereniging U.V.S.V./N.V.V.S.U.. Verder ben ik dit jaar coördinator van de commissie Strategie, Personeel & Organisatie binnen de Universiteitsraad en zet ik me dit jaar in voor sociale veiligheid.`}</div>
@@ -21,7 +21,7 @@ export default function nieuweFractie() {
                         Sammie Verhoeven <br /> Fractievoorzitter
                     </div>
                 </div>
-                <div className="nieuwLid">
+                <div className="fractieLid">
                     <Image src={kai} alt="iets" className="nlIMG"></Image>
                     <div className="NFoverlay">
                         <div className="NFtext">
@@ -38,7 +38,7 @@ export default function nieuweFractie() {
                         Kai van Willigen <br /> Voorzitter Universiteitsraad
                     </div>
                 </div>
-                <div className="nieuwLid">
+                <div className="fractieLid">
                     <Image src={orlando} alt="iets" className="nlIMG"></Image>
                     <div className="NFoverlay">
                         <div className="NFtext">
@@ -50,7 +50,7 @@ export default function nieuweFractie() {
                     </div>
                     <div className="NFinfo">Orlando Weering</div>
                 </div>
-                <div className="nieuwLid">
+                <div className="fractieLid">
                     <Image src={anne} alt="iets" className="nlIMG"></Image>
                     <div className="NFoverlay">
                         <div className="NFtext">
@@ -67,7 +67,7 @@ export default function nieuweFractie() {
                         Anne Minjon <br /> PR-Commissaris Universiteitsraad
                     </div>
                 </div>
-                <div className="nieuwLid">
+                <div className="fractieLid">
                     <Image src={pien} alt="iets" className="nlIMG"></Image>
                     <div className="NFoverlay">
                         <div className="NFtext">

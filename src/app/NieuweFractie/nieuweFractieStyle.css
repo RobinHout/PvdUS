@@ -1,16 +1,16 @@
-.nieuwLid {
+.fractieLid {
     position: relative;
     display: flex;
     /* max-height: 250px; */
-    justify-self: center;
     /* border: 1px solid #000; */
-    background-color: gray;
+    background-color: white;
     border-radius: 20px;
     margin: 2%;
     width: 1080px;
     max-width: 1080px;
+    /* max-width: fit-content; */
 }
-.nieuwLid .nlIMG {
+.fractieLid .nlIMG {
     border-radius: 20px;
     vertical-align: top;
 
@@ -30,30 +30,29 @@
     width: 100%;
     opacity: 0;
     transition: 0.5s ease;
-    background-color: #008cba;
+    background-color: #aec6cf;
 }
-.nieuweFractieAchtergrond {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    display: block;
-    align-self: center;
+.fractieLijst {
+    display: flex;
+    flex-wrap: wrap;
+    /* display: block; */
+    /* align-self: center; */
     justify-content: center;
     /* background-color: white; */
     /* margin: 0px 5% 0px 5%; */
     /* margin: 0px 5% 0px 5%; */
-    /* margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3%; */
+
+    margin-bottom: 3%;
 
     height: auto;
     /* max-width: 1080px; */
 }
-.nieuwLid:hover .NFoverlay {
+.fractieLid:hover .NFoverlay {
     border-radius: 20px;
-    opacity: 0.8;
+    opacity: 1;
 }
 .NFtext {
-    color: white;
+    color: #fadadd;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -63,8 +62,12 @@
 }
 .NFinfo {
     padding: 05px 15px 5px 15px;
+    /* background-color: green; */
+    /* align-self: center; */
+    /* padding-left: auto; */
+    /* width: 100%; */
     white-space: pre-line;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: "Anton";
     /* font-weight: bold; */
     /* text-align: center; */
