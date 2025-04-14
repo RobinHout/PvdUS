@@ -2,8 +2,9 @@
     display: flex;
     gap: 20px;
     justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     padding: 20px;
 }
 
@@ -15,13 +16,14 @@
     background-color: #f0f0f0;
     border-radius: 12px;
     overflow: hidden;
+    min-width: 720px;
     transition: transform 0.4s ease;
     position: relative;
     border: 2px solid black;
 }
 
 .fractieLid:hover {
-    transform: scale(1.6);
+    transform: scale(1.5);
     z-index: 10; /* Zorgt dat het boven de rest komt */
 }
 
