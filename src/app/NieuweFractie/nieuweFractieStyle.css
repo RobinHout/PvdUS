@@ -11,68 +11,51 @@
 .fractieLid {
     display: flex;
     align-items: center;
-    width: 500px;
+    max-width: 1000px;
     height: 250px;
     background-color: #f0f0f0;
     border-radius: 12px;
     overflow: hidden;
-    min-width: 720px;
+    min-width: 1000px;
     transition: transform 0.4s ease;
-    position: relative;
-    border: 2px solid black;
 }
-
-.fractieLid:hover {
-    transform: scale(1.5);
-    z-index: 10; /* Zorgt dat het boven de rest komt */
-}
-
 .fractieFotoContainer {
-    /* flex: 0 0 100px; */
     height: 100%;
     width: auto;
     overflow: hidden;
     transition: flex-basis 0.4s ease;
 }
 
-.fractieLid:hover .fractieFoto {
-    flex-basis: 130px;
-}
-
 .fractieFoto {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
-    transition: transform 0.4s ease;
-}
-
-.fractieLid:hover .bioImg {
-    transform: scale(1.2) translateX(-10%);
 }
 
 .fractieTekst {
     flex: 1;
     padding: 10px;
-    transition: all 0.4s ease;
+    /* transition: all 0.4s ease; 
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .fractieNaam {
-    font-weight: bold;
-    font-size: 1.2rem;
+    /* font-weight: bold; */
+    font-family: "Anton";
+    font-size: 2rem;
+    /* font-size: 1.2rem; */
     transition: opacity 0.3s ease;
 }
 
 .fractieLangeTekst {
-    font-size: 0.7rem;
+    font-size: 1rem;
     display: none;
     transition: opacity 0.3s ease;
 }
 
-.fractieLid:hover .fractieNaam {
+.fractieLid:hover .korteTekst {
     display: none;
 }
 
