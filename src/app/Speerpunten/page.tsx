@@ -1,6 +1,5 @@
 "use client";
 import TekstBlok from "../Components/tekstBlok";
-import "./speerpuntenStyle.css";
 import { useState } from "react";
 import { speerpunten } from "./speerpuntenData";
 
