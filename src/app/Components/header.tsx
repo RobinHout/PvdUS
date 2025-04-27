@@ -108,7 +108,7 @@ const Header = () => {
                             <Link href="/Contact">Contact</Link>
                         </li>
                         <li>
-                            <Link href="#">Word lid!</Link>
+                            <Link href="/WordLid">Word lid!</Link>
                         </li>
                     </ul>
                 </nav>
