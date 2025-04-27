@@ -1,4 +1,5 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
+import Link from "next/link";
 
 const dropdown = () => {
     return (
@@ -15,76 +16,76 @@ const dropdown = () => {
             >
                 <div className="py-1">
                     <MenuItem>
-                        <a
-                            href="#"
+                        <Link
+                            href="/"
                             className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                         >
                             Homepagina
-                        </a>
+                        </Link>
                     </MenuItem>
                 </div>
                 <div className="py-1">
                     <MenuItem>
-                        <a
-                            href="#"
+                        <Link
+                            href="/NieuweFractie"
                             className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                         >
                             Fractie 2025-2026
-                        </a>
+                        </Link>
                     </MenuItem>
                     <MenuItem>
-                        <a
-                            href="#"
+                        <Link
+                            href="/Fractie"
                             className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                         >
                             Fractie 2024-2025
-                        </a>
+                        </Link>
                     </MenuItem>
                     <MenuItem>
-                        <a
-                            href="#"
+                        <Link
+                            href="/OudeFracties"
                             className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                         >
                             Oude fracties
-                        </a>
+                        </Link>
                     </MenuItem>
                 </div>
                 <div className="py-1">
                     <MenuItem>
-                        <a
-                            href="#"
+                        <Link
+                            href="/Speerpunten"
                             className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                         >
                             Speerpunten & initiatieven
-                        </a>
+                        </Link>
                     </MenuItem>
                 </div>
                 <div className="py-1">
                     <MenuItem>
-                        <a
-                            href="#"
+                        <Link
+                            href="/Universiteitsraad"
                             className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                         >
                             Universiteitsraad
-                        </a>
+                        </Link>
                     </MenuItem>
                 </div>
                 <div className="py-1">
                     <MenuItem>
-                        <a
-                            href="#"
+                        <Link
+                            href="/Contact"
                             className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                         >
                             Contact
-                        </a>
+                        </Link>
                     </MenuItem>
                     <MenuItem>
-                        <a
-                            href="#"
+                        <Link
+                            href="/WordLid"
                             className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                         >
                             Word lid!
-                        </a>
+                        </Link>
                     </MenuItem>
                 </div>
             </MenuItems>
