@@ -1,5 +1,5 @@
 import lot from "../Components/Img/Fractie 2025-2026/LotPeters.jpeg";
-import christa from "../Components/Img/Fractie 2025-2026/ChristaHoedemaeker.jpeg";
+import julie from "../Components/Img/Fractie 2025-2026/JulieKruijt.jpeg";
 import kim from "../Components/Img/Fractie 2025-2026/KimBrandsen.jpeg";
 import gijs from "../Components/Img/Fractie 2025-2026/GijsFrankena.jpeg";
 import veerle from "../Components/Img/Fractie 2025-2026/VeerleOudeLenferink.jpeg";
@@ -34,10 +34,10 @@ export const fractieleden = [
         img: gijs,
     },
     {
-        naam: "Christa Hoedemaeker",
+        naam: "Julie Kruijt",
         functie: "",
         vereniging: "U.V.S.V./N.V.V.S.U.",
         tekst: "",
-        img: christa,
+        img: julie,
     },
 ];
