@@ -11,9 +11,8 @@
     padding-right: 20px;
     transition: background-color 0.5s ease;
     background-color: transparent;
-    color: transparent;
+    /* color: transparent; */
     z-index: 1000;
-    /* border-bottom: 1px solid #415587; */
 }
 .logo {
     width: 70px;
@@ -21,14 +20,15 @@
 }
 
 #scrolled {
-    transition: background-color 0.5s ease;
-    transition: color 0.2s ease;
     background-color: #415587;
-    color: #f280cb;
+    /* color: #f280cb; */
+    /* transition: background-color 1.5s ease; */
+    /* transition: color 0.2s ease; */
 }
 
 .titel {
     transition: color 0.2s ease;
+    color: #f280cb;
 
     font-size: 2.5rem;
     font-family: "Anton";
