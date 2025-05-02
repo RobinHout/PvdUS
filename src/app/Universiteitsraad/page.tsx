@@ -3,9 +3,8 @@ import TekstBlok from "../Components/tekstBlok";
 export default function Speerpunten() {
     return (
         <>
-            <TekstBlok
-                titel="Universiteitsraad"
-                tekst={`Wat is de Universiteitsraad?
+            <TekstBlok titel="Universiteitsraad" tekst="" />
+            {/* tekst={`Wat is de Universiteitsraad?
 
 De Universiteitsraad (U-raad, UR) is de centrale medezeggenschapsraad van de Universiteit Utrecht. De U-raad vertegenwoordigt de belangen van alle studenten en medewerkers en bestaat uit twaalf personeelsleden (ieder voor acht uur per week) en twaalf studentleden (ieder voor 32 uur per week). Als studentleden vertegenwoordigen wij de belangen van alle 40.000 studenten aan de UU op het hoogste niveau. De U-raad vergadert met het College van Bestuur (CvB) over hun beleidsplannen en oefent op deze manier invloed uit. 
 
@@ -51,37 +50,67 @@ De Universiteitsraad heeft tevens initiatiefrecht. Dit betekent dat je als U-raa
 Als U-raadslid houdt je je dus zowel bezig met het kritisch beoordelen en controleren van de beleidsplannen van het CvB, als met je eigen initiatieven om de UU te verbeteren. Klik HIER voor een aantal van onze initiatieven uit de afgelopen jaren. 
 
 Ten slotte heeft de Uraad het recht om ongevraagd advies te geven en hebben we te allen tijde informatierecht; het recht om alle informatie te krijgen. `}
-            ></TekstBlok>
-            <div className="punt">
-                <div className="streep">a</div>
-                <div className="puntTitel">Studentenwelzijn</div>
-                <div className="puntTekst">
-                    De PvdUS gelooft in je studententijd als periode van
-                    ontwikkeling die om meer draait dan alleen studeren. De
-                    huidige prestatiedruk legt steeds meer focus op de studie
-                    zelf. Door gestegen kosten in levensonderhoud en de
-                    stijgende rente op studiefinanciering is er ook meer
-                    financiële druk ontstaan om een baan te moeten nemen naast
-                    het studeren. Dit levert stress en zorgen op bij studenten
-                    en neemt de ruimte weg voor zelfontplooiing waar het om zou
-                    moeten draaien. Studentenwelzijn is een groot en belangrijk
-                    thema op de universiteit waar de PvdUS intensief over
-                    meepraat. Het welzijn van studenten is geen optelsom van
-                    individuele gevallen, maar een negatieve ontwikkeling die je
-                    moet bekijken vanuit het systeem. Steeds meer studenten
-                    ervaren de negatieve effecten van de prestatiedruk die er op
-                    hen ligt. Om kans te maken op een steeds verder
-                    concurrerende arbeidsmarkt zijn studenten constant bezig met
-                    zoeken naar mogelijkheden om hun CV op te poetsen. Combineer
-                    dat met de huidige financiële druk van studeren, het
-                    studeren zelf en vaak een baan, en het wordt snel duidelijk
-                    waarom studentenwelzijn een groot probleem is. De PvdUS ziet
-                    dit niet als een probleem van individuele gevallen maar als
-                    een gevolg van het systeem als geheel. Er moet daarom ook
-                    van bovenaf en systeem-breed gekeken worden hoe we
-                    psychologische problemen kunnen voorkomen in plaats van
-                    verhelpen. Wij zetten ons in voor een cultuurverandering op
-                    de universiteit.
+            ></TekstBlok> */}
+            <div className="bg-white">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div className="space-y-12 p-6">
+                        <h2 className="text-3xl font-bold mb-4">
+                            Wat is de Universiteitsraad?
+                        </h2>
+                        <p className="mb-6">
+                            De Universiteitsraad (U-raad, UR) is de centrale
+                            medezeggenschapsraad van de Universiteit Utrecht...
+                        </p>
+
+                        <h3 className="text-2xl font-semibold mb-3">
+                            Het College van Bestuur
+                        </h3>
+                        <p className="mb-6">
+                            Het CvB is belast met het bestuur van de
+                            universiteit...
+                        </p>
+
+                        <h3 className="text-2xl font-semibold mb-3">
+                            De Faculteitsraden
+                        </h3>
+                        <p className="mb-6">
+                            Op het niveau van de faculteiten bestaat ook
+                            medezeggenschap...
+                        </p>
+
+                        <h3 className="text-2xl font-semibold mb-3">
+                            De Raad van Toezicht
+                        </h3>
+                        <p className="mb-6">
+                            De Raad van Toezicht (RvT) is het toezichthoudend
+                            orgaan van de UU...
+                        </p>
+
+                        <h2 className="text-3xl font-bold mt-10 mb-4">
+                            Onze Bevoegdheden
+                        </h2>
+
+                        <h3 className="text-2xl font-semibold mb-3">
+                            Instemmingsrecht
+                        </h3>
+                        <p className="mb-6">
+                            Op sommige stukken heeft de raad instemmingsrecht...
+                        </p>
+
+                        <h3 className="text-2xl font-semibold mb-3">
+                            Adviesrecht
+                        </h3>
+                        <p className="mb-6">
+                            Soms heeft de U-raad enkel adviesrecht...
+                        </p>
+
+                        <h3 className="text-2xl font-semibold mb-3">
+                            Initiatiefrecht
+                        </h3>
+                        <p className="mb-6">
+                            De Universiteitsraad heeft tevens initiatiefrecht...
+                        </p>
+                    </div>
                 </div>
             </div>
         </>
