@@ -38,7 +38,7 @@ export default function HomePage() {
                         </div>
                     </Link>
                     <Link
-                        href="/speerpunten"
+                        href="/Speerpunten"
                         className="w-full sm:w-3/5 md:w-[30%] rounded-t-lg transition-shadow duration-150 hover:shadow-lg hover:opacity-90"
                     >
                         <Image
@@ -47,11 +47,11 @@ export default function HomePage() {
                             className="w-auto max-w-full rounded"
                         />
                         <div className="text-center text-lg font-[public-sans] py-2">
-                            Nieuwe fractie
+                            Standpunten
                         </div>
                     </Link>
                     <Link
-                        href="/universiteitsraad"
+                        href="/Universiteitsraad"
                         className="w-full sm:w-3/5 md:w-[30%] rounded-t-lg transition-shadow duration-150 hover:shadow-lg hover:opacity-90"
                     >
                         <Image
@@ -60,7 +60,7 @@ export default function HomePage() {
                             className="w-auto max-w-full rounded"
                         />
                         <div className="text-center text-lg font-[public-sans] py-2">
-                            Nieuwe fractie
+                            Universiteitsraad
                         </div>
                     </Link>
                 </div>
