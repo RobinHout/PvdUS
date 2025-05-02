@@ -6,20 +6,15 @@ import Intro from "./Components/intro";
 import Link from "next/link";
 import Image from "next/image";
 import foto from "./Components/Img/PvdUSgroepsfoto.jpeg";
-import speerpunten from "./Components/Img/Wtr/064051f32af2.0.jpg";
-import nieuweFractie from "./Components/Img/Wtr/Nieuwefractie2.jpeg";
-import universiteitsraad from "./Components/Img/Wtr/Studentsraadsleden-UU-2024-001.jpg";
+import speerpunten from "./Components/Img/Wtr/SpeerpuntenFoto.jpg";
+import nieuweFractie from "./Components/Img/Wtr/NieuweFractieFoto.jpeg";
+import universiteitsraad from "./Components/Img/Wtr/UniversiteitenraadFoto.jpg";
 import Footer from "./Components/footer";
 // import Blokje from "./Components/blokjes";
 
 export default function HomePage() {
     return (
         <>
-            {/* <img
-                alt="Foto van Utrecht"
-                src={achtergrond}
-                className="achtergrondFoto"
-            ></img> */}
             <div style={{ height: "200px" }} className="opvulling" />
             <Intro />
             <TekstBlok
@@ -28,30 +23,45 @@ export default function HomePage() {
 `}
             />
             <div style={{ backgroundColor: "white" }}>
-                <div className="blokjes">
-                    <Link className="blokje" href="/NieuweFractie">
+                <div className="flex flex-col md:flex-row justify-evenly w-full max-w-screen-lg mx-auto pb-4 z-[1000] sm:w-full ">
+                    <Link
+                        href="/NieuweFractie"
+                        className="w-full sm:w-3/5 md:w-[30%] rounded-t-lg transition-shadow duration-150 hover:shadow-lg hover:opacity-90"
+                    >
                         <Image
                             src={nieuweFractie}
                             alt="test"
-                            className="blokjeFoto"
-                        ></Image>
-                        <div className="blokjeTekst">Nieuwe fractie</div>
+                            className="w-auto max-w-full rounded"
+                        />
+                        <div className="text-center text-lg font-[public-sans] py-2">
+                            Nieuwe fractie
+                        </div>
                     </Link>
-                    <Link className="blokje" href="/Speerpunten">
+                    <Link
+                        href="/speerpunten"
+                        className="w-full sm:w-3/5 md:w-[30%] rounded-t-lg transition-shadow duration-150 hover:shadow-lg hover:opacity-90"
+                    >
                         <Image
                             src={speerpunten}
                             alt="test"
-                            className="blokjeFoto"
-                        ></Image>
-                        <div className="blokjeTekst">Speerpunten</div>
+                            className="w-auto max-w-full rounded"
+                        />
+                        <div className="text-center text-lg font-[public-sans] py-2">
+                            Nieuwe fractie
+                        </div>
                     </Link>
-                    <Link className="blokje" href="/Universiteitsraad">
+                    <Link
+                        href="/universiteitsraad"
+                        className="w-full sm:w-3/5 md:w-[30%] rounded-t-lg transition-shadow duration-150 hover:shadow-lg hover:opacity-90"
+                    >
                         <Image
                             src={universiteitsraad}
                             alt="test"
-                            className="blokjeFoto"
-                        ></Image>
-                        <div className="blokjeTekst">Universiteitsraad</div>
+                            className="w-auto max-w-full rounded"
+                        />
+                        <div className="text-center text-lg font-[public-sans] py-2">
+                            Nieuwe fractie
+                        </div>
                     </Link>
                 </div>
             </div>
@@ -64,8 +74,6 @@ export default function HomePage() {
                 <div className="overlay"></div>
                 <Footer></Footer>
             </div>
-            {/* <Blokje></Blokje> */}
-            {/* <div style={{ height: "500px"`11 }} className="opvulling" /> */}
         </>
     );
 }
