@@ -6,6 +6,9 @@ import Intro from "./Components/intro";
 import Link from "next/link";
 import Image from "next/image";
 import foto from "./Components/Img/PvdUSgroepsfoto.jpeg";
+import speerpunten from "./Components/Img/Wtr/064051f32af2.0.jpg";
+import nieuweFractie from "./Components/Img/Wtr/Nieuwefractie2.jpeg";
+import universiteitsraad from "./Components/Img/Wtr/Studentsraadsleden-UU-2024-001.jpg";
 import Footer from "./Components/footer";
 // import Blokje from "./Components/blokjes";
 
@@ -28,7 +31,7 @@ export default function HomePage() {
                 <div className="blokjes">
                     <Link className="blokje" href="/NieuweFractie">
                         <Image
-                            src={foto}
+                            src={nieuweFractie}
                             alt="test"
                             className="blokjeFoto"
                         ></Image>
@@ -36,7 +39,7 @@ export default function HomePage() {
                     </Link>
                     <Link className="blokje" href="/Speerpunten">
                         <Image
-                            src={foto}
+                            src={speerpunten}
                             alt="test"
                             className="blokjeFoto"
                         ></Image>
@@ -44,7 +47,7 @@ export default function HomePage() {
                     </Link>
                     <Link className="blokje" href="/Universiteitsraad">
                         <Image
-                            src={foto}
+                            src={universiteitsraad}
                             alt="test"
                             className="blokjeFoto"
                         ></Image>
