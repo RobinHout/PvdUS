@@ -33,7 +33,7 @@ export default function HomePage() {
                             alt="test"
                             className="w-auto max-w-full rounded"
                         />
-                        <div className="text-center text-lg font-[public-sans] py-2">
+                        <div className="text-center text-lg font-[Public_Sans] py-2">
                             Nieuwe fractie
                         </div>
                     </Link>
@@ -46,7 +46,7 @@ export default function HomePage() {
                             alt="test"
                             className="w-auto max-w-full rounded"
                         />
-                        <div className="text-center text-lg font-[public-sans] py-2">
+                        <div className="text-center text-lg font-[Public_Sans] py-2">
                             Standpunten
                         </div>
                     </Link>
@@ -59,7 +59,7 @@ export default function HomePage() {
                             alt="test"
                             className="w-auto max-w-full rounded"
                         />
-                        <div className="text-center text-lg font-[public-sans] py-2">
+                        <div className="text-center text-lg font-[Public_Sans] py-2">
                             Universiteitsraad
                         </div>
                     </Link>

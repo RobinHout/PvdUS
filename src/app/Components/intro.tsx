@@ -30,7 +30,7 @@ const Intro = () => {
                     <h1 className="text-4xl font-[anton]">
                         Partij voor de Utrechtse Student
                     </h1>
-                    <p className="text-lg font-[public-sans]">
+                    <p className="text-lg font-[Public_Sans]">
                         De partij voor de studenten van Utrecht
                     </p>
                 </div>
