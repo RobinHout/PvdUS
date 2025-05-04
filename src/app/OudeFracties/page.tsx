@@ -1,5 +1,4 @@
 import TekstBlok from "../Components/tekstBlok";
-import "./oudeStyle.css";
 // import Image from "next/image";
 import { oudeFracties } from "./dataOudeFracties";
 
@@ -42,7 +41,6 @@ export default function OudeFracties() {
                     </div>
                 </div>
             ))}
-            
         </>
     );
 }
