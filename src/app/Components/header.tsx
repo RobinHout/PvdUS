@@ -41,7 +41,6 @@ const Header = () => {
                     px-5 py-2.5 transition-colors duration-500 ease-in-out
                     z-[1000] ${scrolled ? "bg-[#415587]" : "bg-transparent"}`}
         >
-            {/* Logo */}
             <Link href="/" className="w-[70px] h-auto">
                 <Image
                     src={logo}
@@ -51,7 +50,6 @@ const Header = () => {
                 />
             </Link>
 
-            {/* Titel */}
             <Link href="/home">
                 <h1
                     className="text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] font-[anton]
@@ -61,8 +59,6 @@ py-[15px] px-5"
                     Partij voor de Utrechtse Student
                 </h1>
             </Link>
-
-            {/* Dropdown */}
             <Dropdown />
         </header>
     );

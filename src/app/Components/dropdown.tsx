@@ -41,14 +41,14 @@ const dropdown = () => {
                             Fractie 2024-2025
                         </Link>
                     </MenuItem>
-                    {/* <MenuItem>
+                    <MenuItem>
                         <Link
                             href="/OudeFracties"
                             className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
                         >
                             Oude fracties
                         </Link>
-                    </MenuItem> */}
+                    </MenuItem>
                 </div>
                 <div className="py-1">
                     <MenuItem>
