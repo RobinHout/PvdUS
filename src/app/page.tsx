@@ -51,7 +51,8 @@ export default function HomePage() {
                         </div>
                     </Link>
                     <Link
-                        href="/Universiteitsraad"
+                        // href="/Universiteitsraad"
+                        href=""
                         className="w-full sm:w-3/5 md:w-[30%] rounded-t-lg transition-shadow duration-150 hover:shadow-lg hover:opacity-90"
                     >
                         <Image
