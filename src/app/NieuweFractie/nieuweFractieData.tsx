@@ -37,7 +37,7 @@ export const fractieleden = [
         naam: "Julie Kruijt",
         functie: "",
         vereniging: "U.V.S.V./N.V.V.S.U.",
-        tekst: "",
+        tekst: "Julie is 22 jaar oud en heeft net haar bachelor rechtsgeleerdheid behaald. Daarnaast is ze 3e jaars bij U.V.S.V/N.V.V.S.U en hockeyt bij USHC. Komend jaar wil zij zich inzetten voor het studentenwelzijn, onder andere door de samenwerking met studentenverenigingen te verbeteren en extra aandacht te vragen voor vertrouwenspersonen, zodat sociaal en mentaal welzijn meer centraal komt te staan. Daarnaast wil zij zich ook inzetten voor studentensport. Sporten is niet alleen gezond maar ook een essentieel onderdeel van het studentenleven waar sportiviteit en gezelligheid kan samenkomen. Daarom moet studentensport betaalbaar en toegankelijk blijven voor alle studenten.",
         img: julie,
     },
 ];
