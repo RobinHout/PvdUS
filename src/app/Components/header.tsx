@@ -50,7 +50,7 @@ const Header = () => {
                 />
             </Link>
 
-            <Link href="/home">
+            <Link href="/">
                 <h1
                     className="text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] font-[anton]
 text-[#f280cb] text-center transition-colors duration-200 ease-in-out
