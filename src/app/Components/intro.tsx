@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Intro = () => {
     return (
-        <div className="flex max-w-screen-lg mx-auto text-pink-300 relative">
+        <div className="flex max-w-screen-lg mx-auto text-[#f280cb] relative">
             <div
                 className="
     relative 
@@ -36,7 +36,7 @@ const Intro = () => {
                 </div>
                 <Link
                     href="Contact"
-                    className="inline-block transition-colors duration-500 ease-in-out rounded-md border border-transparent bg-pink-300 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
+                    className="inline-block transition-colors duration-500 ease-in-out rounded-md border border-transparent bg-[#f280cb] px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
                 >
                     Contact
                 </Link>
