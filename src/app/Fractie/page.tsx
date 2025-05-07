@@ -45,20 +45,18 @@ import { fractieleden } from "./fractieData";
 export default function NieuweFractie() {
     return (
         <div className="flex flex-col">
-            {/* Titelblok */}
-            <TekstBlok titel="Fractie 2024-2025" tekst="" />
+            <TekstBlok titel="Fractie 2025-2026" tekst="" />
 
-            {/* Fractieledenlijst */}
             <div className="flex flex-col md:flex-row flex-wrap justify-evenly gap-6 max-w-screen-lg mx-auto px-4 py-8">
                 {fractieleden.map((fractie) => (
                     <div
                         key={fractie.naam}
-                        className="bg-white rounded-lg shadow-lg overflow-hidden w-full sm:w-[45%] md:w-[30%]"
+                        className="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden w-full"
                     >
                         <Image
                             src={fractie.img}
                             alt={fractie.naam}
-                            className="w-full h-48 object-[center_-20px] object-cover"
+                            className="w-full max-h-100 object-cover"
                         />
                         <div className="p-4">
                             {/* Korte gegevens */}
@@ -73,7 +71,6 @@ export default function NieuweFractie() {
                                     {fractie.vereniging}
                                 </p>
                             </div>
-                            {/* Lange beschrijving */}
                             <p className="text-base mb-4 pt-2">
                                 {fractie.tekst}
                             </p>
@@ -82,10 +79,8 @@ export default function NieuweFractie() {
                 ))}
             </div>
 
-            {/* Spacing */}
             <div className="h-10" />
 
-            {/* Footer */}
             <Footer />
         </div>
     );

@@ -12,12 +12,12 @@ export default function NieuweFractie() {
                 {fractieleden.map((fractie) => (
                     <div
                         key={fractie.naam}
-                        className="bg-white rounded-lg shadow-lg overflow-hidden w-full sm:w-[45%] md:w-[30%]"
+                        className="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden w-full"
                     >
                         <Image
                             src={fractie.img}
                             alt={fractie.naam}
-                            className="w-full h-48 object-cover"
+                            className="w-full max-h-100 object-cover"
                         />
                         <div className="p-4">
                             {/* Korte gegevens */}
