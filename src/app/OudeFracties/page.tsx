@@ -42,10 +42,10 @@ export default function OudeFracties() {
                                 <li key={persoonIndex}>
                                     <div className="flex items-center gap-x-6 pb-1.5">
                                         <div>
-                                            <h3 className="text-xl/7 font-semibold tracking-tight text-gray-900">
+                                            <h3 className="text-xl/6 font-semibold tracking-tight text-gray-900">
                                                 {person.name}
                                             </h3>
-                                            <p className="text-sm/6 font-semibold text-indigo-600">
+                                            <p className="text-sm/6 font-semibold text-[#415587]">
                                                 {person.role}
                                             </p>
                                         </div>
