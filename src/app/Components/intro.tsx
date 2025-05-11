@@ -27,7 +27,7 @@ const Intro = () => {
                     </p>
                 </div>
                 <Link
-                    href="/contact"
+                    href="/Contact"
                     className="inline-block transition-colors duration-500 ease-in-out rounded-md border border-transparent bg-[#f280cb] px-8 py-3 text-center text-lg text-white hover:bg-indigo-700"
                 >
                     Contact
