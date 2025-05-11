@@ -1,11 +1,11 @@
 import Logo from "./Img/logo-pvdus.png";
 import Image from "next/image";
 import Link from "next/link";
-
 const Intro = () => {
     return (
-        <div className="flex flex-row max-w-screen-lg mx-auto text-[#f280cb] relative">
-            <div className="relative w-1/2 sm:w-2/5 md:w-1/3 lg:w-2/5 h-auto">
+        <div className="flex flex-col sm:flex-row max-w-screen-lg mx-auto text-[#f280cb] relative">
+            {/* Logo blok */}
+            <div className="relative w-full h-48 sm:w-1/2 sm:h-auto sm:max-w-md">
                 <Image
                     src={Logo}
                     alt="logo van PvdUS"
@@ -14,7 +14,9 @@ const Intro = () => {
                     priority
                 />
             </div>
-            <div>
+
+            {/* Tekstblok */}
+            <div className="w-full sm:w-1/2 mt-8 sm:mt-0 sm:pl-8 text-center sm:text-left">
                 <div className="pb-10">
                     <p className="text-transparent">.</p>
                     <h1 className="text-5xl font-[anton]">
@@ -25,7 +27,7 @@ const Intro = () => {
                     </p>
                 </div>
                 <Link
-                    href="Contact"
+                    href="/contact"
                     className="inline-block transition-colors duration-500 ease-in-out rounded-md border border-transparent bg-[#f280cb] px-8 py-3 text-center text-lg text-white hover:bg-indigo-700"
                 >
                     Contact
