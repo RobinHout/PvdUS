@@ -9,7 +9,7 @@ import foto from "./Components/Img/PvdUSgroepsfoto.jpeg";
 import speerpunten from "./Components/Img/Wtr/SpeerpuntenFoto.jpg";
 import nieuweFractie from "./Components/Img/Wtr/NieuweFractieFoto.jpeg";
 import universiteitsraad from "./Components/Img/Wtr/UniversiteitenraadFoto.jpg";
-// import Footer from "./Components/footer";
+import Footer from "./Components/footer";
 // import Blokje from "./Components/blokjes";
 
 export default function HomePage() {
@@ -22,11 +22,11 @@ export default function HomePage() {
                 tekst={`Wij zijn De Partij voor de Utrechtse Student (PvdUS). Op dit moment zetelt onze 18e fractie in de Universiteitsraad van de Universiteit Utrecht. Binnen de Universiteitsraad vertegenwoordigen wij de 'actieve student'. Dit is de student die het belangrijk vindt om zich naast studie ook op andere vlakken te ontplooien. 
 `}
             />
-            <div style={{ backgroundColor: "white" }}>
-                <div className="flex flex-col md:flex-row justify-evenly w-full max-w-screen-lg mx-auto pb-4 z-[1000] sm:w-full ">
+            <div className="bg-white">
+                <div className="flex flex-col md:flex-row justify-evenly w-full max-w-screen-lg mx-auto pb-4 z-[1000]">
                     <Link
                         href="/NieuweFractie"
-                        className="w-full sm:w-3/5 md:w-[30%] rounded-t-lg transition-shadow duration-150 hover:shadow-lg hover:opacity-90"
+                        className="w-4/5 mx-auto md:mx-0 sm:w-3/5 md:w-[30%] rounded-t-lg transition-shadow duration-150 hover:shadow-lg hover:opacity-90"
                     >
                         <Image
                             src={nieuweFractie}
@@ -39,7 +39,7 @@ export default function HomePage() {
                     </Link>
                     <Link
                         href="/Speerpunten"
-                        className="w-full sm:w-3/5 md:w-[30%] rounded-t-lg transition-shadow duration-150 hover:shadow-lg hover:opacity-90"
+                        className="w-4/5 mx-auto md:mx-0 sm:w-3/5 md:w-[30%] rounded-t-lg transition-shadow duration-150 hover:shadow-lg hover:opacity-90"
                     >
                         <Image
                             src={speerpunten}
@@ -52,7 +52,7 @@ export default function HomePage() {
                     </Link>
                     <Link
                         href="/Universiteitsraad"
-                        className="w-full sm:w-3/5 md:w-[30%] rounded-t-lg transition-shadow duration-150 hover:shadow-lg hover:opacity-90"
+                        className="w-4/5 mx-auto md:mx-0 sm:w-3/5 md:w-[30%] rounded-t-lg transition-shadow duration-150 hover:shadow-lg hover:opacity-90"
                     >
                         <Image
                             src={universiteitsraad}
@@ -72,7 +72,7 @@ export default function HomePage() {
                     style={{ width: "100%" }}
                 ></Image>
                 <div className="overlay"></div>
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
             </div>
         </>
     );

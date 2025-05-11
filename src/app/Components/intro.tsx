@@ -4,24 +4,8 @@ import Link from "next/link";
 
 const Intro = () => {
     return (
-        <div className="flex max-w-screen-lg mx-auto text-[#f280cb] relative">
-            <div
-                className="
-    relative 
-    w-1/2      /* 50% breedte op mobiel */
-    sm:w-2/5   /* 40% vanaf ≥640px */
-    md:w-1/3   /* ~33% vanaf ≥768px */
-    lg:w-2/5   /* 40% vanaf ≥1024px */
-    
-
-  h-auto"
-                //   relative
-                // w-3/5      /* 60% op mobiel */
-                // sm:w-1/2   /* 50% vanaf ≥640px */
-                // md:w-2/5   /* 40% vanaf ≥768px */
-                // lg:w-1/2   /* 50% vanaf ≥1024px */
-                // h-auto
-            >
+        <div className="flex flex-row max-w-screen-lg mx-auto text-[#f280cb] relative">
+            <div className="relative w-1/2 sm:w-2/5 md:w-1/3 lg:w-2/5 h-auto">
                 <Image
                     src={Logo}
                     alt="logo van PvdUS"
