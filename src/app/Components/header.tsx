@@ -1,14 +1,17 @@
 "use client";
 import { useEffect, useState } from "react";
-// import { usePathname } from "next/navigation";
-import "./headerStyle.css";
+// import "./headerStyle.css";
 import logo from "./Img/logo-pvdus.png";
 import Image from "next/image";
 import Link from "next/link";
 import Dropdown from "./dropdown";
+import { usePathname  } from "next/navigation";
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
+    const pathname = usePathname();
+    const isHome = pathname === "/";
+
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
@@ -21,6 +24,9 @@ const Header = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const titleClass =
+        !scrolled && isHome ? "text-transparent" : "text-[#f280cb]";
 
     // return (
     //     <>
@@ -52,9 +58,9 @@ const Header = () => {
 
             <Link href="/">
                 <h1
-                    className="text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] font-[anton]
-text-[#f280cb] text-center transition-colors duration-200 ease-in-out
-py-[15px] px-5"
+                    className={`text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] font-[anton]
+ text-center transition-colors duration-200 ease-in-out
+py-[15px] px-5 ${titleClass}`}
                 >
                     Partij voor de Utrechtse Student
                 </h1>

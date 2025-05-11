@@ -1,9 +1,13 @@
-import lot from "../Components/Img/Fractie 2025-2026/LotPeters.jpeg";
+// import lot from "../Components/Img/Fractie 2025-2026/LotPeters.jpeg";
+// import julie from "../Components/Img/Fractie 2025-2026/JulieKruijt.jpeg";
+// import kim from "../Components/Img/Fractie 2025-2026/KimBrandsen.jpeg";
+// import gijs from "../Components/Img/Fractie 2025-2026/GijsFrankena.jpeg";
+// import veerle from "../Components/Img/Fractie 2025-2026/VeerleOudeLenferink.jpeg";
+import lot from "../Components/Img/Wtr/1.jpg";
 import julie from "../Components/Img/Fractie 2025-2026/JulieKruijt.jpeg";
-import kim from "../Components/Img/Fractie 2025-2026/KimBrandsen.jpeg";
-import gijs from "../Components/Img/Fractie 2025-2026/GijsFrankena.jpeg";
-import veerle from "../Components/Img/Fractie 2025-2026/VeerleOudeLenferink.jpeg";
-
+import kim from "../Components/Img/Wtr/3.jpg";
+import gijs from "../Components/Img/Wtr/4.jpg";
+import veerle from "../Components/Img/Wtr/2.jpg";
 export const fractieleden = [
     {
         naam: "Lot Peters",

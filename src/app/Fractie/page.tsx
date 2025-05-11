@@ -45,7 +45,7 @@ import { fractieleden } from "./fractieData";
 export default function NieuweFractie() {
     return (
         <div className="flex flex-col">
-            <TekstBlok titel="Fractie 2025-2026" tekst="" />
+            <TekstBlok titel="Fractie 2024-2025" tekst="" />
 
             <div className="flex flex-col md:flex-row flex-wrap justify-evenly gap-6 max-w-screen-lg mx-auto px-4 py-8">
                 {fractieleden.map((fractie) => (

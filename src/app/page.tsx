@@ -9,7 +9,7 @@ import foto from "./Components/Img/PvdUSgroepsfoto.jpeg";
 import speerpunten from "./Components/Img/Wtr/SpeerpuntenFoto.jpg";
 import nieuweFractie from "./Components/Img/Wtr/NieuweFractieFoto.jpeg";
 import universiteitsraad from "./Components/Img/Wtr/UniversiteitenraadFoto.jpg";
-import Footer from "./Components/footer";
+// import Footer from "./Components/footer";
 // import Blokje from "./Components/blokjes";
 
 export default function HomePage() {
@@ -72,7 +72,7 @@ export default function HomePage() {
                     style={{ width: "100%" }}
                 ></Image>
                 <div className="overlay"></div>
-                <Footer></Footer>
+                {/* <Footer></Footer> */}
             </div>
         </>
     );

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Anton, Public_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/header";
+// import Footer from "./Components/footer";
 
 const anton = Anton({
     weight: "400",
@@ -31,9 +32,10 @@ export default function RootLayout({
                     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
                 />
             </head>
-            <body className="App">
+            <body className="App flex flex-col min-h-screen">
                 <Header />
-                <main>{children}</main>
+                <main className="flex-1">{children}</main>
+                {/* <Footer /> */}
             </body>
         </>
     );
