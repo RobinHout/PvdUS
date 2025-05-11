@@ -11,7 +11,7 @@ export default function WordLid() {
 
 Meld je dan aan voor de Partij voor de Utrechtse Student (PvdUS)! Als lid van de PvdUS zet jij je een jaar lang in voor de belangen van álle actieve studenten aan de Universiteit Utrecht. Op het hoogste niveau denk je mee, beslis je mee en maak je je hard voor thema’s zoals het onderwijskwaliteit, studentenwelzijn, duurzaamheid en het (sport)verenigingsleven in Utrecht.
 
-Je werkt samen met een andere ambitieuze studenten, leert superveel en krijgt naast een groot netwerk, ook een waardevolle toevoeging op je CV erbij.
+Je werkt samen met een andere ambitieuze studenten, leert superveel en krijgt naast een groot netwerk, ook een waardevolle toevoeging op je cv erbij.
 
 Klinkt dit als iets voor jou? Stuur dan nu je motivatie en cv naar bestuur.pvdus@gmail.com en wie weet maak jij binnenkort deel uit van het hoogste medezeggenschapsorgaan van de Universiteit Utrecht! `}
             />
