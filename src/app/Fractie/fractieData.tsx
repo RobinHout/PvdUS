@@ -16,7 +16,7 @@ export const fractieleden = [
     {
         naam: "Kai van Willigen",
         functie: "Voorzitter Universiteitsraad",
-        vereniging: "Unitas",
+        vereniging: "Unitas S.R. | Alcmeon",
         // tekst: "Hallo, Ik ben Kai van Willigen en ik ben dit jaar de voorzitter van de Universiteitsraad. Binnen de raad zit ik in de commissie Onderwijs, Onderzoek en Studenten. Dit jaar zet ik mij in voor de verbetering van de positie van studentbestuurders binnen Utrecht. Naast het raadswerk studeer ik Psychologie en ben ik lid bij Unitas!",
         tekst: "De tweede plek op onze lijst wordt vervuld door Kai van Willigen! Kai is 20 jaar oud en gaat hij volgend jaar verder met zijn bachelor Psychologie. Daarnaast is hij lid bij Unitas S.R. en heeft hij afgelopen jaar een bestuursjaar gedaan bij U.P.V. Alcmaeon. Aankomend jaar gaat Kai zich inzetten voor het welzijn van studentbestuurders en zal hier specifiek kijken naar de werkdruk en bestuurdersvergoedingen. Ook wilt hij zich inzetten voor de financiële band tussen de universiteit en verenigingen. Het is vaak onduidelijk waar verenigingen terecht kunnen en wat precies de regels zijn. Door verduidelijking te scheppen, zullen verenigingen hier meer uit kunnen halen en de belangen van hun studenten nog beter kunnen behartigen. ",
         img: kai,
