@@ -34,7 +34,7 @@ export default function HomePage() {
                             className="w-auto max-w-full rounded"
                         />
                         <div className="text-center text-lg font-[Public_Sans] py-2">
-                            Nieuwe fractie
+                            Huidige fractie
                         </div>
                     </Link>
                     <Link
