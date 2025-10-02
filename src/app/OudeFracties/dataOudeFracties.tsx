@@ -5,6 +5,35 @@ type Person = {
 };
 export const oudeFracties: Person[][] = [
     [
+        //2024-2025
+        {
+            name: "Sammie Verhoeven",
+            role: "U.V.S.V./N.V.V.S.U.",
+            imageUrl:
+                "../Components/Img/Fractie 2024-2025/SammieVerhoeven.jpeg",
+        },
+        {
+            name: "Kai van Willigen",
+            role: "Unitas S.R. | Alcmeon",
+            imageUrl: "../Components/Img/Fractie 2024-2025/KaiVanWilligen.jpeg",
+        },
+        {
+            name: "Orlando Weering",
+            role: "Utrechtsch Studenten Corps",
+            imageUrl: "../Components/Img/Fractie 2024-2025/OrlandoWeering.jpg",
+        },
+        {
+            name: "Anne Minjon",
+            role: "U.V.S.V./N.V.V.S.U.",
+            imageUrl: "../Components/Img/Fractie 2024-2025/AnneMinjon.jpg",
+        },
+        {
+            name: "Pien van der Meij",
+            role: "Unitas S.R.",
+            imageUrl: "../Components/Img/Fractie 2024-2025/PienVanDerMeij.jpeg",
+        },
+    ],
+    [
         //2023-2024
         {
             name: "Lieke van Zijl",
