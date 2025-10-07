@@ -32,7 +32,7 @@ export default function NieuweFractie() {
                                     {fractie.vereniging}
                                 </p>
                             </div>
-                            <p className="text-base mb-4 pt-2">
+                            <p className="text-base mb-4 pt-2 text-black">
                                 {fractie.tekst}
                             </p>
                         </div>
