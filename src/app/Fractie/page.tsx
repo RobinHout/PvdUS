@@ -1,5 +1,4 @@
 import TekstBlok from "../Components/tekstBlok";
-import "../NieuweFractie/nieuweFractieStyle.css";
 import Image from "next/image";
 import Footer from "../Components/footer";
 import { fractieleden } from "./fractieData";
