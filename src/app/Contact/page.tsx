@@ -1,7 +1,7 @@
 // import achtergrond from "../Components/Img/UtrechtDomtoren.jpg";
 import TekstBlok from "../Components/tekstBlok";
 import Image from "next/image";
-import foto from "../Components/Img/PvdUSgroepsfoto.jpeg";
+import foto from "../Components/Img/1758105154723.jpeg";
 import Footer from "../Components/footer";
 export default function contact() {
     return (

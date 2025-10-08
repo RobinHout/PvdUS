@@ -1,5 +1,5 @@
 import TekstBlok from "../Components/tekstBlok";
-import foto from "../Components/Img/PvdUSgroepsfoto.jpeg";
+import foto from "../Components/Img/1758105154723.jpeg";
 import Image from "next/image";
 import Footer from "../Components/footer";
 export default function WordLid() {
