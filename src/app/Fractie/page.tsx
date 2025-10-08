@@ -60,7 +60,7 @@ export default function NieuweFractie() {
                         <div className="p-4">
                             {/* Korte gegevens */}
                             <div className="border-b pb-2">
-                                <p className="text-lg font-semibold">
+                                <p className="text-lg font-semibold text-black">
                                     {fractie.naam}
                                 </p>
                                 <p className="text-sm text-gray-600">
@@ -70,7 +70,7 @@ export default function NieuweFractie() {
                                     {fractie.vereniging}
                                 </p>
                             </div>
-                            <p className="text-base mb-4 pt-2">
+                            <p className="text-base mb-4 pt-2 text-black">
                                 {fractie.tekst}
                             </p>
                         </div>
