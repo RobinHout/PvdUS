@@ -14,7 +14,7 @@ export default function Speerpunten() {
         <>
             <TekstBlok
                 titel="Standpunten"
-                tekst={`Al meer dan 18 jaar vertegenwoordigt de PvdUS de belangen van actieve studenten in Utrecht.
+                tekst={`Al meer dan 19 jaar vertegenwoordigt de PvdUS de belangen van actieve studenten in Utrecht.
 Want studeren is zoveel meer dan alleen in de boeken duiken. Je studententijd is een unieke periode waarin je niet alleen academische kennis opdoet, maar ook jezelf leert kennen, nieuwe ervaringen opdoet en jezelf ontwikkelt – binnen én buiten de collegezaal. Of je nu actief bent bij een vereniging, je inzet voor medezeggenschap of op zoek bent naar balans tussen studie en relevante ervaring opdoen: de stem van de actieve student verdient een plek aan tafel. En dáár maakt de PvdUS zich hard voor.`}
             ></TekstBlok>
             <div className="space-y-4 p-4 bg-white mx-auto shadow-md">
