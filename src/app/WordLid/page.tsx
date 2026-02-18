@@ -6,7 +6,7 @@ export default function WordLid() {
     return (
         <>
             <TekstBlok
-                titel="Word lid van de PvdUS"
+                titel="Meld je aan bij de PvdUS"
                 tekst={`Ben jij een betrokken Utrechtse student met een passie voor medezeggenschap? Heb jij ideeën over hoe het studentenleven en de universiteit beter kunnen – en wil je daar écht iets in betekenen?
 
 Meld je dan aan voor de Partij voor de Utrechtse Student (PvdUS)! Als lid van de PvdUS zet jij je een jaar lang in voor de belangen van álle actieve studenten aan de Universiteit Utrecht. Op het hoogste niveau denk je mee, beslis je mee en maak je je hard voor thema’s zoals het onderwijskwaliteit, studentenwelzijn, duurzaamheid en het (sport)verenigingsleven in Utrecht.
