@@ -12,12 +12,12 @@ export default function contact() {
             ></img> */}
             <div style={{ height: "100px" }} className="opvulling" />
             <TekstBlok
-                titel="Wil je ons bereiken?"
+                titel="Heb je interesse of wil je meer weten, stuur dan een appje naar Lot: 0683260723"
                 tekst={`E-mailadres 
 bestuur.pvdus@gmail.com
 
 Adres
-Bestuursgebouw, kamer 4.46
+Bestuursgebouw, kamer 3.34
 Heidelberglaan 8, 3584CS Utrecht
 
 mailbox 80125, 3508 TC Utrecht`}
