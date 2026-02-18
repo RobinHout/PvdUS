@@ -1,7 +1,7 @@
 type Person = {
     name: string;
     role: string;
-    imageUrl: string;
+    imageUrl?: string;
 };
 export const oudeFracties: Person[][] = [
     [
@@ -343,45 +343,39 @@ export const oudeFracties: Person[][] = [
         },
     ],
     [
-        //2012-2013
-        {
-            name: "Sanne Haringa",
-            role: "",
-            imageUrl:
-                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-        {
-            name: "Jan Overwijk",
-            role: "",
-            imageUrl:
-                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-        {
-            name: "Tabitha Timisela",
-            role: "",
-            imageUrl:
-                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
+        // 2012–2013
+        { name: "Sanne Haringa", role: "" },
+        { name: "Jan Overwijk", role: "" },
+        { name: "Tabitha Timisela", role: "" },
     ],
     [
-        //2011-2012
-        {
-            name: "Florentien de Bruin",
-            role: "",
-            imageUrl:
-                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-        {
-            name: "Anne Sophie Oosterlee",
-            role: "",
-            imageUrl:
-                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-        {
-            name: "Guido van Seeters",
-            role: "",
-            imageUrl:
-                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
+        // 2011–2012
+        { name: "Florentien de Bruin", role: "" },
+        { name: "Anne Sophie Oosterlee", role: "" },
+        { name: "Guido van Seeters", role: "" },
+    ],
+    [
+        // 2010–2011
+        { name: "Ewout Lubberdink", role: "" },
+        { name: "Kristel van der Woerdt", role: "" },
+        { name: "Christie Warnink", role: "" },
+    ],
+    [
+        // 2009–2010
+        { name: "Jan-Willem Brouwers", role: "" },
+        { name: "Annelies Elkhuizen", role: "" },
+        { name: "Madeleine van de Vecht", role: "" },
+    ],
+    [
+        // 2008–2009
+        { name: "Christiaan Abbenhuis", role: "" },
+        { name: "Maarten Constant", role: "" },
+        { name: "Marloes Ramp", role: "" },
+    ],
+    [
+        // 2007–2008
+        { name: "Jochem van der Lugt", role: "" },
+        { name: "Brent van der Hoog", role: "" },
+        { name: "Clen Verkleij", role: "" },
     ],
 ];
