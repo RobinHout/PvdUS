@@ -376,6 +376,6 @@ export const oudeFracties: Person[][] = [
         // 2007–2008
         { name: "Jochem van der Lugt", role: "" },
         { name: "Brent van der Hoog", role: "" },
-        { name: "Clen Verkleij", role: "" },
+        // { name: "Clen Verkleij", role: "" },
     ],
 ];
