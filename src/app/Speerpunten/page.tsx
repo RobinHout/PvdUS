@@ -14,7 +14,9 @@ type Speerpunt = {
 function Chevron({ open }: { open: boolean }) {
     return (
         <svg
-            className={`h-5 w-5 transition-transform duration-200 ${open ? "rotate-180" : "rotate-0"}`}
+            className={`h-5 w-5 transition-transform duration-200 ${
+                open ? "rotate-180" : "rotate-0"
+            }`}
             viewBox="0 0 20 20"
             fill="currentColor"
             aria-hidden="true"
@@ -29,7 +31,6 @@ function Chevron({ open }: { open: boolean }) {
 }
 
 export default function Speerpunten() {
-    // Houdt alleen bij welke "Meer weten" open staat (optioneel: meerdere tegelijk kan ook)
     const [openMeerWetenId, setOpenMeerWetenId] = useState<number | null>(null);
 
     const toggleMeerWeten = (id: number) => {
@@ -44,6 +45,29 @@ export default function Speerpunten() {
 Want studeren is zoveel meer dan alleen in de boeken duiken. Je studententijd is een unieke periode waarin je niet alleen academische kennis opdoet, maar ook jezelf leert kennen, nieuwe ervaringen opdoet en jezelf ontwikkelt – binnen én buiten de collegezaal. Of je nu actief bent bij een vereniging, je inzet voor medezeggenschap of op zoek bent naar balans tussen studie en relevante ervaring opdoen: de stem van de actieve student verdient een plek aan tafel. En dáár maakt de PvdUS zich hard voor.`}
             />
 
+            {/* PDF sectie */}
+            <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 bg-white">
+                <div className="mb-4 flex justify-end">
+                    <a
+                        href="/PartijprogrammaPvdUS.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-700"
+                    >
+                        Open PDF in nieuw tabblad
+                    </a>
+                </div>
+
+                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                    <iframe
+                        src="/PartijprogrammaPvdUS.pdf#toolbar=0"
+                        className="h-[800px] w-full border-0 block bg-white"
+                        title="Standpunten PDF"
+                    />
+                </div>
+            </div>
+
+            {/* Speerpunten */}
             <section className="bg-slate-50">
                 <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
                     <div className="mb-6">
@@ -62,7 +86,6 @@ Want studeren is zoveel meer dan alleen in de boeken duiken. Je studententijd is
                                     key={s.id}
                                     className="rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
                                 >
-                                    {/* Titel + hoofdtekst altijd zichtbaar */}
                                     <div className="p-5">
                                         <h2 className="text-lg font-semibold text-slate-900 sm:text-xl">
                                             {s.titel}
@@ -72,7 +95,6 @@ Want studeren is zoveel meer dan alleen in de boeken duiken. Je studententijd is
                                             {s.tekst}
                                         </p>
 
-                                        {/* Alleen Meer weten uitklapbaar */}
                                         {hasMeerWeten ? (
                                             <div className="mt-5">
                                                 <button
