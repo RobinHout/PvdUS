@@ -1,87 +1,125 @@
-import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 
-const dropdown = () => {
+const navigationItems = [
+    { href: "/", label: "Homepagina" },
+    { href: "/NieuweFractie", label: "Fractie 2025-2026" },
+    { href: "/OudeFracties", label: "Oude fracties" },
+    { href: "/Speerpunten", label: "Speerpunten & initiatieven" },
+    { href: "/Universiteitsraad", label: "Universiteitsraad" },
+    { href: "/Contact", label: "Contact" },
+    { href: "/WordLid", label: "Meld je aan!" },
+];
+
+const isActivePath = (pathname: string, href: string) => {
+    if (href === "/") {
+        return pathname === href;
+    }
+
+    return pathname.startsWith(href);
+};
+
+const Dropdown = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const containerRef = useRef<HTMLDivElement>(null);
+    const pathname = usePathname();
+
+    useEffect(() => {
+        setIsOpen(false);
+    }, [pathname]);
+
+    useEffect(() => {
+        if (!isOpen) {
+            return;
+        }
+
+        const handlePointerDown = (event: MouseEvent) => {
+            if (!containerRef.current?.contains(event.target as Node)) {
+                setIsOpen(false);
+            }
+        };
+
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === "Escape") {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handlePointerDown);
+        document.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            document.removeEventListener("mousedown", handlePointerDown);
+            document.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [isOpen]);
+
     return (
-        <Menu as="div" className="relative inline-block text-left">
-            <div>
-                <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 text-3xl py-2font-semibold text-[#f280cb] hover:text-gray-100 focus:outline-hidden">
-                    <i className="fa fa-bars" id="bars"></i>
-                </MenuButton>
-            </div>
-
-            <MenuItems
-                transition
-                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+        <div ref={containerRef} className="relative flex items-center">
+            <button
+                type="button"
+                aria-expanded={isOpen}
+                aria-controls="site-navigation"
+                aria-label={isOpen ? "Sluit menu" : "Open menu"}
+                onClick={() => setIsOpen((open) => !open)}
+                className="group flex items-center rounded-md border border-white/15 bg-[#415587]/88 px-3 py-2 text-white/88 shadow-[0_10px_24px_rgba(18,31,59,0.18)] backdrop-blur-md transition duration-200 hover:border-white/30 hover:bg-[#415587] hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 focus:ring-offset-2 focus:ring-offset-[#415587]"
             >
-                <div className="py-1">
-                    <MenuItem>
-                        <Link
-                            href="/"
-                            className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                        >
-                            Homepagina
-                        </Link>
-                    </MenuItem>
+                <span className="relative flex h-5 w-6 flex-col justify-between">
+                    <span
+                        className={`block h-0.5 w-full rounded-full bg-current transition-transform duration-200 ${
+                            isOpen ? "translate-y-[9px] rotate-45" : ""
+                        }`}
+                    />
+                    <span
+                        className={`block h-0.5 w-full rounded-full bg-current transition duration-200 ${
+                            isOpen ? "opacity-0" : "opacity-100"
+                        }`}
+                    />
+                    <span
+                        className={`block h-0.5 w-full rounded-full bg-current transition-transform duration-200 ${
+                            isOpen ? "-translate-y-[9px] -rotate-45" : ""
+                        }`}
+                    />
+                </span>
+            </button>
+
+            <div
+                id="site-navigation"
+                className={`absolute right-0 top-full mt-3 w-[min(19rem,calc(100vw-1.5rem))] origin-top-right rounded-xl border border-slate-200/70 bg-white/96 p-2 text-slate-900 shadow-[0_20px_45px_rgba(18,31,59,0.18)] backdrop-blur-xl transition-all duration-200 ${
+                    isOpen
+                        ? "visible translate-y-0 opacity-100"
+                        : "pointer-events-none invisible -translate-y-2 opacity-0"
+                }`}
+            >
+                <div className="grid gap-1">
+                    {navigationItems.map((item) => {
+                        const active = isActivePath(pathname, item.href);
+
+                        return (
+                            <Link
+                                key={item.href}
+                                href={item.href}
+                                onClick={() => setIsOpen(false)}
+                                aria-current={active ? "page" : undefined}
+                                className={`rounded-lg border px-4 py-3 text-sm transition duration-200 ${
+                                    active
+                                        ? "border-[#415587]/18 bg-[#415587]/8 text-[#24314d]"
+                                        : "border-transparent bg-transparent text-slate-700 hover:border-slate-200 hover:bg-slate-50 hover:text-slate-900"
+                                }`}
+                            >
+                                <span className="block font-medium tracking-[0.01em]">
+                                    {item.label}
+                                </span>
+                            </Link>
+                        );
+                    })}
                 </div>
-                <div className="py-1">
-                    <MenuItem>
-                        <Link
-                            href="/NieuweFractie"
-                            className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                        >
-                            Fractie 2025-2026
-                        </Link>
-                    </MenuItem>
-                    <MenuItem>
-                        <Link
-                            href="/OudeFracties"
-                            className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                        >
-                            Oude fracties
-                        </Link>
-                    </MenuItem>
-                </div>
-                <div className="py-1">
-                    <MenuItem>
-                        <Link
-                            href="/Speerpunten"
-                            className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                        >
-                            Speerpunten & initiatieven
-                        </Link>
-                    </MenuItem>
-                </div>
-                <div className="py-1">
-                    <MenuItem>
-                        <Link
-                            href="/Universiteitsraad"
-                            className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                        >
-                            Universiteitsraad
-                        </Link>
-                    </MenuItem>
-                </div>
-                <div className="py-1">
-                    <MenuItem>
-                        <Link
-                            href="/Contact"
-                            className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                        >
-                            Contact
-                        </Link>
-                    </MenuItem>
-                    <MenuItem>
-                        <Link
-                            href="/WordLid"
-                            className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                        >
-                            Meld je aan!
-                        </Link>
-                    </MenuItem>
-                </div>
-            </MenuItems>
-        </Menu>
+            </div>
+        </div>
     );
 };
-export default dropdown;
+
+export default Dropdown;

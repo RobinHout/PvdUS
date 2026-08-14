@@ -46,7 +46,7 @@ Want studeren is zoveel meer dan alleen in de boeken duiken. Je studententijd is
             />
 
             {/* PDF sectie */}
-            <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 bg-white">
                 <div className="mb-4 flex justify-end">
                     <a
                         href="/PartijprogrammaPvdUS.pdf"
@@ -61,7 +61,7 @@ Want studeren is zoveel meer dan alleen in de boeken duiken. Je studententijd is
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                     <iframe
                         src="/PartijprogrammaPvdUS.pdf#toolbar=0"
-                        className="h-[800px] w-full border-0 block"
+                        className="h-[800px] w-full border-0 block bg-white"
                         title="Standpunten PDF"
                     />
                 </div>
