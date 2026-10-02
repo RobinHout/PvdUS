@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 
 const navigationItems = [
     { href: "/", label: "Homepagina" },
-    { href: "/NieuweFractie", label: "Fractie 2025-2026" },
+    { href: "/NieuweFractie", label: "Fractie 2026-2027" },
     { href: "/OudeFracties", label: "Oude fracties" },
     { href: "/Speerpunten", label: "Speerpunten & initiatieven" },
     { href: "/Universiteitsraad", label: "Universiteitsraad" },
